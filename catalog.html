@@ -11,31 +11,33 @@
 <body>
   <header class="page__header">
     <div class="container">
-      <img src="#" alt="Логотип" class="logo">
       <nav class="naigation">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">Главная</a>
+        <a href="index.html" class="navigation__logo">
+          <img src="#" alt="logo" class="navigation__img">
+        </a>
+        <ul class="navigation-curent__list">
+          <li class="navigation-current__item">
+            <a href="#" class="navigation-curent__link">Главная</a>
           </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">О Седоне</a>
+          <li class="navigation-curent__item">
+            <a href="#" class="navigation-curent__link">О Седоне</a>
           </li>
-          <li class="navigation__item">
+          <li class="navigation-curent__item">
             <a href="catalog.html" class="navigation__link">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation__user">
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">
+        <ul class="navigation-curent__user">
+          <li class="navigation-curent__item">
+            <a href="#" class="navigation-curent__link">
               <span class="visually__hidden">Поиск</span>
             </a>
           </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">
+          <li class="navigation-curent__item">
+            <a href="#" class="navigation-curent__link">
               <span class="visually__hidden">Избранное</span>
             </a>
           </li>
-          <li class="navigation__item">
+          <li class="navigation-curent__item">
             <a href="catalog.html" class="navigation__link">
               Хочу сюда!
             </a>
@@ -44,6 +46,38 @@
       </nav>
     </div>
   </header>
+
+  <main class="main__inner">
+    <header class="header-inner">
+      <h1 class="header-inner__title">Гостиницы Седоны</h1>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item">
+          <a href="index.html" class="breadcrumbs__link">
+            <img src="#" alt="Главная " class="breadcrumbs__icon">
+          </a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link">Гостиницы</a>
+        </li>
+      </ul>
+    </header>
+
+    <section class="catalog-products">
+      <h2 class="visually-hidden">Список товаров и услуг</h2>
+      <form action="https://echo.htmlacademy.ru/" class="catalog-filter__products" method="get">
+        <fieldset class="catalog-filter__group">
+          <legend class="catalog-filter__title">
+            Инфраструктура:
+          </legend>
+        </fieldset>
+        <fieldset class="catalog-filter__group">
+          <legend class="catalog-filter__title">
+            Тип жилья:
+          </legend>
+        </fieldset>
+      </form>
+    </section>
+  </main>
 
   <section class="catalog__maling">
     <div class="container">
