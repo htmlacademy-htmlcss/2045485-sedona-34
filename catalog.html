@@ -63,20 +63,47 @@
     </header>
 
     <section class="catalog-products">
-      <h2 class="visually-hidden">Список товаров и услуг</h2>
-      <form action="https://echo.htmlacademy.ru/" class="catalog-filter__products" method="get">
+      <h2 class="visually-hidden">
+        Список товаров с фильтрами.
+      </h2>
+      <form action="https://echo.htmlacademy.ru/" class="catalog-products__filter" method="get">
         <fieldset class="catalog-filter__group">
-          <legend class="catalog-filter__title">
+          <legend class="catalog-filter__item">
             Инфраструктура:
           </legend>
+          <ul class="catalog-filter__list">
+            <li class="catalog-filter__item">
+              <label class="control" for="123">
+                <input name="swimming-pool" id="123" type="checkbox" class="control__input">
+                Бассейн
+              </label>
+            </li>
+            <li class="catalog-filter__item">
+              <label class="control" for="124">
+                <input name="parking" id="124" type="checkbox" class="control__input">
+                Парковка
+              </label>
+            </li>
+            <li class="catalog-filter__item">
+              <label class="control" for="125">
+                <input name="wi-fi" id="125" type="checkbox" class="control__input">
+                Wi-Fi
+              </label>
+            </li>
+          </ul>
         </fieldset>
+
         <fieldset class="catalog-filter__group">
-          <legend class="catalog-filter__title">
+          <legend class="catalog-filter__item">
             Тип жилья:
           </legend>
         </fieldset>
+
+        <button class="catalog__btn">Применить</button>
+        <button class="catalog__btn">Сбросить</button>
       </form>
     </section>
+
   </main>
 
   <section class="catalog__maling">
