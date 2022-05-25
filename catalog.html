@@ -97,11 +97,181 @@
           <legend class="catalog-filter__item">
             Тип жилья:
           </legend>
+          <ul class="catalog-filter__list">
+            <li class="catalog-filter__item">
+              <label class="control">
+                <input name="product-group" type="radio" class="control__input">
+                Гостиница
+              </label>
+            </li>
+            <li class="catalog-filter__item">
+              <label class="control">
+                <input name="product-group" type="radio" class="control__input">
+                Мотель
+              </label>
+            </li>
+            <li class="catalog-filter__item">
+              <label class="control">
+                <input name="product-group" type="radio" class="control__input">
+                Апартаменты
+              </label>
+            </li>
+          </ul>
         </fieldset>
-
         <button class="catalog__btn">Применить</button>
         <button class="catalog__btn">Сбросить</button>
       </form>
+
+      <select aria-label="Сортировка" class="select__control">
+        <option value="popular">
+          Сначала популярное
+        </option>
+        <option value="cheap">
+          Сначала дешёвые
+        </option>
+        <option value="expensive">
+          Сначала дорогие
+        </option>
+      </select>
+      <a href="#" class="button__dark">
+        <span class="visually-hidden">
+          Паказать список
+        </span>
+      </a>
+      <a href="#" class="button__dark">
+        <span class="visually-hidden">
+          Показать карточки
+        </span>
+      </a>
+      <a href="#" class="button__dark">
+        <span class="visually-hidden">
+          Показать на весь экран
+        </span>
+      </a>
+
+      <div class="product-card">
+        <ul class="product-card__list">
+          <li class="product-card__item">
+            <a href="product.html" class="product-card__link">
+              <img src="#" alt="product-card-image" class="product-card__img">
+              <h3 class="product-card__title">Amara Resort & Spa</h3>
+            </a>
+            <p class="product-card__descr">
+              Гостиница
+            </p>
+            <p class="product-card__price">
+              От 4000 ₽
+            </p>
+            <button class="product-card__buy">подробнее</button>
+            <button class="product-card__buy">в избранное</button>
+            <a href="product.html" class="product-card__raiting">
+              <img src="#" alt="raiting-stars" class="raiting__img">
+              <a href="index.html" class="raiting__btn">Рейтинг: 8,5</a>
+            </a>
+          </li>
+          <li class="product-card__item">
+            <a href="product.html" class="product-card__link">
+              <img src="#" alt="product-card-image" class="product-card__img">
+              <h3 class="product-card__title">Villas at Poco Diablo</h3>
+            </a>
+            <p class="product-card__descr">
+              Гостиница
+            </p>
+            <p class="product-card__price">
+              От 5000 ₽
+            </p>
+            <button class="product-card__buy">подробнее</button>
+            <button class="product-card__buy">в избранном</button>
+            <a href="product.html" class="product-card__raiting">
+              <img src="#" alt="raiting-stars" class="raiting__img">
+              <a href="index.html" class="raiting__btn">Рейтинг: 9,2</a>
+            </a>
+          </li>
+          <li class="product-card__item">
+            <a href="product.html" class="product-card__link">
+              <img src="#" alt="product-card-image" class="product-card__img">
+              <h3 class="product-card__title">Desert Quail Inn</h3>
+            </a>
+            <p class="product-card__descr">
+              Гостиница
+            </p>
+            <p class="product-card__price">
+              От 2500 ₽
+            </p>
+            <button class="product-card__buy">подробнее</button>
+            <button class="product-card__buy">в избранное</button>
+            <a href="product.html" class="product-card__raiting">
+              <img src="#" alt="raiting-stars" class="raiting__img">
+              <a href="index.html" class="raiting__btn">Рейтинг: 6,9</a>
+            </a>
+          </li>
+          <li class="product-card__item">
+            <a href="product.html" class="product-card__link">
+              <img src="#" alt="product-card-image" class="product-card__img">
+              <h3 class="product-card__title">GreenTree Inn</h3>
+            </a>
+            <p class="product-card__descr">
+              Гостиница
+            </p>
+            <p class="product-card__price">
+              От 1500 ₽
+            </p>
+            <button class="product-card__buy">подробнее</button>
+            <button class="product-card__buy">в избранное</button>
+            <a href="product.html" class="product-card__raiting">
+              <img src="#" alt="raiting-stars" class="raiting__img">
+              <a href="index.html" class="raiting__btn">Рейтинг: 5,0</a>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="pagination">
+        <div class="container">
+          <ul class="pagination__list">
+            <li class="pagintation__item">
+              <a href="#" class="pagination__link">
+                1
+              </a>
+            </li>
+            <li class="pagintation__item">
+              <a href="#" class="pagination__link">
+                2
+              </a>
+            </li>
+            <li class="pagintation__item">
+              <a href="#" class="pagination__link">
+                3
+              </a>
+            </li>
+            <li class="pagintation__item">
+              <a href="#" class="pagination__link">
+                4
+              </a>
+            </li>
+            <li class="pagintation__item">
+              <a href="#" class="pagination__link">
+                ...
+              </a </li> <li class="pagintation__item">
+              <a href="#" class="pagination__link">
+                10
+              </a>
+            </li>
+          </ul>
+          <span class="pagination__select">Гостиниц на странице:</span>
+          <select aria-label="Сортировка" class="select__control">
+            <option value="number">
+              4
+            </option>
+            <option value="number">
+              5
+            </option>
+            <option value="number">
+              7
+            </option>
+          </select>
+        </div>
+      </div>
+      </div>
     </section>
 
   </main>
