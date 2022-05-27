@@ -29,12 +29,12 @@
         <ul class="navigation-curent__user">
           <li class="navigation-curent__item">
             <a href="#" class="navigation-curent__link">
-              <span class="visually__hidden">Поиск</span>
+              <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-curent__item">
             <a href="#" class="navigation-curent__link">
-              <span class="visually__hidden">Избранное</span>
+              <span class="visually-hidden">Избранное</span>
             </a>
           </li>
           <li class="navigation-curent__item">
@@ -75,19 +75,25 @@
             <li class="catalog-filter__item">
               <label class="control" for="123">
                 <input name="swimming-pool" id="123" type="checkbox" class="control__input">
-                Бассейн
+                <span class="control__spn">
+                  Бассейн
+                </span>
               </label>
             </li>
             <li class="catalog-filter__item">
               <label class="control" for="124">
                 <input name="parking" id="124" type="checkbox" class="control__input">
-                Парковка
+                <span class="control__spn">
+                  Парковка
+                </span>
               </label>
             </li>
             <li class="catalog-filter__item">
               <label class="control" for="125">
                 <input name="wi-fi" id="125" type="checkbox" class="control__input">
-                Wi-Fi
+                <span class="control__spn">
+                  Wi-Fi
+                </span>
               </label>
             </li>
           </ul>
@@ -101,59 +107,66 @@
             <li class="catalog-filter__item">
               <label class="control">
                 <input name="product-group" type="radio" class="control__input">
-                Гостиница
+                <span class="control__spn">Гостиница</span>
               </label>
             </li>
             <li class="catalog-filter__item">
               <label class="control">
                 <input name="product-group" type="radio" class="control__input">
-                Мотель
+                <span class="control__spn">Мотель</span>
               </label>
             </li>
             <li class="catalog-filter__item">
               <label class="control">
                 <input name="product-group" type="radio" class="control__input">
-                Апартаменты
+                <span class="control__spn">Апартаменты</span>
               </label>
             </li>
           </ul>
         </fieldset>
-        <button class="catalog__btn">Применить</button>
-        <button class="catalog__btn">Сбросить</button>
+        <div class="catalog__btn">
+          <button type="button" class="catalog__btn-1">Применить</button>
+          <button type="button" class="catalog__btn-2">Сбросить</button>
+        </div>
       </form>
+      <div class="select__wrapper">
+        <select aria-label="Сортировка" class="select__control">
+          <option value="popular">
+            Сначала популярное
+          </option>
+          <option value="cheap">
+            Сначала дешёвые
+          </option>
+          <option value="expensive">
+            Сначала дорогие
+          </option>
+        </select>
+        <a href="#" class="button__dark">
+          <span class="visually-hidden">
+            Паказать список
+          </span>
+        </a>
+        <a href="#" class="button__dark">
+          <span class="visually-hidden">
+            Показать карточки
+          </span>
+        </a>
+        <div class="button__link">
+          <a href="#" class="button__dark">
 
-      <select aria-label="Сортировка" class="select__control">
-        <option value="popular">
-          Сначала популярное
-        </option>
-        <option value="cheap">
-          Сначала дешёвые
-        </option>
-        <option value="expensive">
-          Сначала дорогие
-        </option>
-      </select>
-      <a href="#" class="button__dark">
-        <span class="visually-hidden">
-          Паказать список
-        </span>
-      </a>
-      <a href="#" class="button__dark">
-        <span class="visually-hidden">
-          Показать карточки
-        </span>
-      </a>
-      <a href="#" class="button__dark">
+        </div>
         <span class="visually-hidden">
           Показать на весь экран
         </span>
-      </a>
-
+        </a>
+      </div>
       <div class="product-card">
         <ul class="product-card__list">
           <li class="product-card__item">
             <a href="product.html" class="product-card__link">
-              <img src="#" alt="product-card-image" class="product-card__img">
+              <div class="product-card__inner">
+                <img src="#" alt="product-card-image" class="product-card__img">
+              </div>
               <h3 class="product-card__title">Amara Resort & Spa</h3>
             </a>
             <p class="product-card__descr">
@@ -162,11 +175,11 @@
             <p class="product-card__price">
               От 4000 ₽
             </p>
-            <button class="product-card__buy">подробнее</button>
-            <button class="product-card__buy">в избранное</button>
+            <div class="product-card__btn">
+              <a href="#">в избранное</a>
+            </div>
             <a href="product.html" class="product-card__raiting">
               <img src="#" alt="raiting-stars" class="raiting__img">
-              <a href="index.html" class="raiting__btn">Рейтинг: 8,5</a>
             </a>
           </li>
           <li class="product-card__item">
@@ -180,8 +193,8 @@
             <p class="product-card__price">
               От 5000 ₽
             </p>
-            <button class="product-card__buy">подробнее</button>
-            <button class="product-card__buy">в избранном</button>
+            <a class="product-card__buy">подробнее</a>
+            <a class="product-card__buy">в избранном</a>
             <a href="product.html" class="product-card__raiting">
               <img src="#" alt="raiting-stars" class="raiting__img">
               <a href="index.html" class="raiting__btn">Рейтинг: 9,2</a>
@@ -198,8 +211,8 @@
             <p class="product-card__price">
               От 2500 ₽
             </p>
-            <button class="product-card__buy">подробнее</button>
-            <button class="product-card__buy">в избранное</button>
+            <a class="product-card__buy">подробнее</a>
+            <a class="product-card__buy">в избранное</a>
             <a href="product.html" class="product-card__raiting">
               <img src="#" alt="raiting-stars" class="raiting__img">
               <a href="index.html" class="raiting__btn">Рейтинг: 6,9</a>
@@ -216,8 +229,8 @@
             <p class="product-card__price">
               От 1500 ₽
             </p>
-            <button class="product-card__buy">подробнее</button>
-            <button class="product-card__buy">в избранное</button>
+            <a class="product-card__buy">подробнее</a>
+            <a class="product-card__buy">в избранное</a>
             <a href="product.html" class="product-card__raiting">
               <img src="#" alt="raiting-stars" class="raiting__img">
               <a href="index.html" class="raiting__btn">Рейтинг: 5,0</a>
@@ -225,50 +238,71 @@
           </li>
         </ul>
       </div>
-      <div class="pagination">
-        <div class="container">
-          <ul class="pagination__list">
-            <li class="pagintation__item">
-              <a href="#" class="pagination__link">
-                1
-              </a>
-            </li>
-            <li class="pagintation__item">
-              <a href="#" class="pagination__link">
-                2
-              </a>
-            </li>
-            <li class="pagintation__item">
-              <a href="#" class="pagination__link">
-                3
-              </a>
-            </li>
-            <li class="pagintation__item">
-              <a href="#" class="pagination__link">
+      <div class="pagintation__inner">
+        <div class="pagination">
+          <div class="container">
+            <ul class="pagination__list">
+              <li class="pagintation__item">
+                <a href="#" class="pagination__link">
+                  1
+                </a>
+              </li>
+              <li class="pagintation__item">
+                <a href="#" class="pagination__link">
+                  2
+                </a>
+              </li>
+              <li class="pagintation__item">
+                <a href="#" class="pagination__link">
+                  3
+                </a>
+              </li>
+              <li class="pagintation__item">
+                <a href="#" class="pagination__link">
+                  4
+                </a>
+              </li>
+              <li class="pagintation__item">
+                <a href="#" class="pagination__link">
+                  5
+              </li>
+              <li class="pagintation__item">
+                <a href="#" class="pagination__link">
+                  6
+              </li>
+              <li class="pagintation__item">
+                <a href="#" class="pagination__link">
+                  7
+              </li>
+              <li class="pagintation__item">
+                <a href="#" class="pagination__link">
+                  8
+              </li>
+              <li class="pagintation__item">
+                <a href="#" class="pagination__link">
+                  9
+              </li>
+              <li class="pagintation__item">
+                <a href="#" class="pagination__link">
+                  10
+                </a>
+              </li>
+            </ul>
+            <span class="pagination__select">Гостиниц на странице:</span>
+          </div>
+          <div class="select__inner">
+            <select aria-label="Сортировка" class="select__control">
+              <option value="number">
                 4
-              </a>
-            </li>
-            <li class="pagintation__item">
-              <a href="#" class="pagination__link">
-                ...
-              </a </li> <li class="pagintation__item">
-              <a href="#" class="pagination__link">
-                10
-              </a>
-            </li>
-          </ul>
-          <span class="pagination__select">Гостиниц на странице:</span>
-          <select aria-label="Сортировка" class="select__control">
-            <option value="number">
-              4
-            </option>
-            <option value="number">
-              5
-            </option>
-            <option value="number">
-              7
-            </option>
-          </select>
+              </option>
+              <option value="number">
+                5
+              </option>
+              <option value="number">
+                7
+              </option>
+            </select>
+          </div>
         </div>
       </div>
       </div>
@@ -285,7 +319,7 @@
         Только полезная информация и никакого спама, честное бойскаутское!
       </p>
       <form action="" class="maling__subs">
-        <label for=""><button class="maling__btn">Подписаться</button></label>
+        <label for=""><button type="button" class="maling__btn">Подписаться</button></label>
         <input type="text">
       </form>
     </div>

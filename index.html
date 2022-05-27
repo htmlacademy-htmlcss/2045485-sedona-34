@@ -9,37 +9,37 @@
 <body>
   <header class="page__header">
     <div class="container">
-      <img src="#" alt="Логотип" class="logo">
-      <nav class="naigation">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">Главная</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">О Седоне</a>
-          </li>
-          <li class="navigation__item">
-            <a href="catalog.html" class="navigation__link">Гостиницы</a>
-          </li>
-        </ul>
-        <ul class="navigation__user">
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">
-              <span class="visually__hidden">Поиск</span>
-            </a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">
-              <span class="visually__hidden">Избранное</span>
-            </a>
-          </li>
-          <li class="navigation__item">
-            <a href="catalog.html" class="navigation__link">
-              Хочу сюда!
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <href src="#" alt="Логотип" class="logo">
+        <nav class="naigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link">Главная</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">О Седоне</a>
+            </li>
+            <li class="navigation__item">
+              <a href="catalog.html" class="navigation__link">Гостиницы</a>
+            </li>
+          </ul>
+          <ul class="navigation__user">
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">
+                <span class="visually-hidden">Поиск</span>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">
+                <span class="visually-hidden">Избранное</span>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="catalog.html" class="navigation__link">
+                Хочу сюда!
+              </a>
+            </li>
+          </ul>
+        </nav>
     </div>
   </header>
 
@@ -47,10 +47,12 @@
   <main class="main-index">
     <section class="description">
       <div class="container">
-        <h1 class="visually__hidden">
+        <h1 class="visually-hidden">
           Город Седона
         </h1>
-        <img src="#" alt="Логотип города Седона" class="description__logo">
+        <div class="description__logo">
+          <img src="#" alt="Логотип города Седона" class="description__img">
+        </div>
         <h2 class="description__title">Седона — небольшой городок в Аризоне,
           заслуживающий большего!</h2>
         <p class="description__subtitle">
@@ -61,8 +63,10 @@
 
     <section class="advantages">
       <div class="container">
-        <h2 class="visually__hidden">Преимущества</h2>
-        <img src="#" alt="Седона" class="advantages__img">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <div class="advantages__logo">
+          <img src="#" alt="Седона" class="advantages__img">
+        </div>
         <h3 class="advantages__title">Настоящий городок</h3>
         <p class="advantages__thumb">— №1 —</p>
         <p class="advanteges__subtitle">
@@ -70,7 +74,9 @@
         </p>
         <ul class="advantages__list">
           <li class="advantages__item">
-            <img src="#" alt="Sedona House icon" class="advantages__img">
+            <div class="advantages__inner">
+              <img src="#" alt="Sedona House icon" class="advantages__img">
+            </div>
             <h3 class="advantages__title">Жильё</h3>
             <p class="advantages__descr">
               Рекомендуем пожить в настоящем мотеле,
@@ -95,17 +101,17 @@
           </li>
         </ul>
         <img src="#" alt="Седона" class="advantages__img">
-        <h3 class="advantages__title-devil">Там есть
+        <h3 class="advantages__title">Там есть
           мост дьявола</h3>
-        <p class="advantages__thumb-devil">— №2 —</p>
-        <p class="advanteges__subtitle-devil">
+        <p class="advantages__thumb">— №2 —</p>
+        <p class="advanteges__subtitle">
           Да, по нему можно пройти! Если вы осмелитесь, разумеется
         </p>
         <ul class="advantages__list">
           <li class="advantages__item">
             <h3 class="advantages__title">Небольшая
               площадь</h3>
-            <p class="advantages__title-numb">
+            <p class="advantages__title">
               — №3 —
             </p>
             <p class="advantages__descr">
@@ -115,7 +121,7 @@
           <li class="advantages__item">
             <h3 class="advantages__title">Красивая
               дорога</h3>
-            <p class="advantages__title-numb">
+            <p class="advantages__title">
               — №4 —
             </p>
             <p class="advantages__descr">
@@ -125,7 +131,7 @@
           <li class="advantages__item">
             <h3 class="advantages__title">Мало
               туристов</h3>
-            <p class="advantages__title-numb">
+            <p class="advantages__title">
               — №5 —
             </p>
             <p class="advantages__descr">
@@ -158,10 +164,13 @@
         </p>
         <form action="mailto:fdgd@.ru" class="maling__subs">
           <label for="input">
-              </label>
+          </label>
           <input type="text">
+          <div class="maling__btn">
+            <button type="button">Подписаться</button>
+          </div>
         </form>
-        <button class="maling__btn">Подписаться</button>
+
       </div>
     </section>
 
@@ -178,7 +187,7 @@
             <img src="" alt="youtube icon" class="footer__img">
           </li>
         </ul>
-        <h2 class="footer__title"><a href="tel:88128121212">+7 (812) 812-12-12</a></h2>
+        <a class="footer__title" href="tel:88128121212">+7 (812) 812-12-12</a>
       </div>
       <img src="#" alt="html.academy logo" class="footer__logo">
     </footer>
