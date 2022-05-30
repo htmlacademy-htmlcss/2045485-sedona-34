@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="style.css">
 
 <head>
   <meta charset="UTF-8">
@@ -9,10 +10,11 @@
 </head>
 
 <body>
-  <header class="page__header">
+  <header class="catalog-header">
     <div class="container">
-      <nav class="naigation">
+      <nav class="catalog-navigation">
         <a href="index.html" class="navigation__logo">
+          <img src="images/logo.svg" alt="logo" class="catalog-navigation__img">
         </a>
         <ul class="navigation-curent__list">
           <li class="navigation-current__item">
@@ -28,12 +30,13 @@
         <ul class="navigation-curent__user">
           <li class="navigation-curent__item">
             <a href="#" class="navigation-curent__link">
-                <img src="images/search.svg" alt="" class="navigation-curent__img">
+              <img src="images/search.svg" alt="" class="navigation-curent__img">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-curent__item">
             <a href="#" class="navigation-curent__link">
+              <img src="images/favorite.svg" alt="search" class="navigation-curent__img">
               <span class="visually-hidden">Избранное</span>
             </a>
           </li>
@@ -47,14 +50,17 @@
     </div>
   </header>
 
-  <main class="main__inner">
-    <header class="header-inner">
-      <h1 class="header-inner__title">Гостиницы Седоны</h1>
-      <ul class="breadcrumbs">
+  <main class="catalog-main">
+    <header class="header-catalog">
+      <h1 class="header-catalog__title">Гостиницы Седоны</h1>
+      <ul class="header-catalog__breadcrumbs">
         <li class="breadcrumbs__item">
           <a href="index.html" class="breadcrumbs__link">
-            <img src="#" alt="Главная " class="breadcrumbs__icon">
+            <img src="images/Union.svg" alt="Union" class="breadcrumbs__icon">
           </a>
+        </li>
+        <li class="breadcrumbs__item">
+          <img src="images/Vector.svg" alt="arrow" class="breadcrumbs__icon">
         </li>
         <li class="breadcrumbs__item">
           <a class="breadcrumbs__link">Гостиницы</a>
@@ -130,6 +136,9 @@
         </div>
       </form>
       <div class="select__wrapper">
+        <h2 class="select__title">
+          Найдено гостиниц: 38
+        </h2>
         <select aria-label="Сортировка" class="select__control">
           <option value="popular">
             Сначала популярное
@@ -142,30 +151,33 @@
           </option>
         </select>
         <a href="#" class="button__dark">
+            <img src="images/View.svg" alt="View" class="button__dark-img">
           <span class="visually-hidden">
             Паказать список
           </span>
         </a>
         <a href="#" class="button__dark">
+            <img src="images/View-2.svg" alt="View" class="button__dark-img">
           <span class="visually-hidden">
             Показать карточки
           </span>
         </a>
         <div class="button__link">
           <a href="#" class="button__dark">
-
+            <img src="images/View-3.svg" alt="View" class="button__dark-img">
         </div>
         <span class="visually-hidden">
           Показать на весь экран
         </span>
         </a>
       </div>
+
       <div class="product-card">
         <ul class="product-card__list">
           <li class="product-card__item">
             <a href="product.html" class="product-card__link">
               <div class="product-card__inner">
-                <img src="#" alt="product-card-image" class="product-card__img">
+                <img src="images/Amara.jpg" alt="product-card-image" class="product-card__img">
               </div>
               <h3 class="product-card__title">Amara Resort & Spa</h3>
             </a>
@@ -184,7 +196,7 @@
           </li>
           <li class="product-card__item">
             <a href="product.html" class="product-card__link">
-              <img src="#" alt="product-card-image" class="product-card__img">
+              <img src="images/hotel-1.jpg" alt="product-card-image" class="product-card__img">
               <h3 class="product-card__title">Villas at Poco Diablo</h3>
             </a>
             <p class="product-card__descr">
