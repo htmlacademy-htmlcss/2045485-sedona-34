@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="style.css">
 
 <head>
   <meta charset="UTF-8">
@@ -9,11 +10,11 @@
 </head>
 
 <body>
-  <header class="page__header">
+  <header class="catalog-header">
     <div class="container">
-      <nav class="naigation">
+      <nav class="catalog-navigation">
         <a href="index.html" class="navigation__logo">
-          <img src="#" alt="logo" class="navigation__img">
+          <img src="images/logo.svg" alt="logo" class="catalog-navigation__img">
         </a>
         <ul class="navigation-curent__list">
           <li class="navigation-current__item">
@@ -29,12 +30,14 @@
         <ul class="navigation-curent__user">
           <li class="navigation-curent__item">
             <a href="#" class="navigation-curent__link">
-              <span class="visually__hidden">Поиск</span>
+              <img src="images/search.svg" alt="" class="navigation-curent__img">
+              <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-curent__item">
             <a href="#" class="navigation-curent__link">
-              <span class="visually__hidden">Избранное</span>
+              <img src="images/favorite.svg" alt="search" class="navigation-curent__img">
+              <span class="visually-hidden">Избранное</span>
             </a>
           </li>
           <li class="navigation-curent__item">
@@ -47,14 +50,17 @@
     </div>
   </header>
 
-  <main class="main__inner">
-    <header class="header-inner">
-      <h1 class="header-inner__title">Гостиницы Седоны</h1>
-      <ul class="breadcrumbs">
+  <main class="catalog-main">
+    <header class="header-catalog">
+      <h1 class="header-catalog__title">Гостиницы Седоны</h1>
+      <ul class="header-catalog__breadcrumbs">
         <li class="breadcrumbs__item">
           <a href="index.html" class="breadcrumbs__link">
-            <img src="#" alt="Главная " class="breadcrumbs__icon">
+            <img src="images/Union.svg" alt="Union" class="breadcrumbs__icon">
           </a>
+        </li>
+        <li class="breadcrumbs__item">
+          <img src="images/Vector.svg" alt="arrow" class="breadcrumbs__icon">
         </li>
         <li class="breadcrumbs__item">
           <a class="breadcrumbs__link">Гостиницы</a>
@@ -75,19 +81,25 @@
             <li class="catalog-filter__item">
               <label class="control" for="123">
                 <input name="swimming-pool" id="123" type="checkbox" class="control__input">
-                Бассейн
+                <span class="control__spn">
+                  Бассейн
+                </span>
               </label>
             </li>
             <li class="catalog-filter__item">
               <label class="control" for="124">
                 <input name="parking" id="124" type="checkbox" class="control__input">
-                Парковка
+                <span class="control__spn">
+                  Парковка
+                </span>
               </label>
             </li>
             <li class="catalog-filter__item">
               <label class="control" for="125">
                 <input name="wi-fi" id="125" type="checkbox" class="control__input">
-                Wi-Fi
+                <span class="control__spn">
+                  Wi-Fi
+                </span>
               </label>
             </li>
           </ul>
@@ -101,59 +113,72 @@
             <li class="catalog-filter__item">
               <label class="control">
                 <input name="product-group" type="radio" class="control__input">
-                Гостиница
+                <span class="control__spn">Гостиница</span>
               </label>
             </li>
             <li class="catalog-filter__item">
               <label class="control">
                 <input name="product-group" type="radio" class="control__input">
-                Мотель
+                <span class="control__spn">Мотель</span>
               </label>
             </li>
             <li class="catalog-filter__item">
               <label class="control">
                 <input name="product-group" type="radio" class="control__input">
-                Апартаменты
+                <span class="control__spn">Апартаменты</span>
               </label>
             </li>
           </ul>
         </fieldset>
-        <button class="catalog__btn">Применить</button>
-        <button class="catalog__btn">Сбросить</button>
+        <div class="catalog__btn">
+          <button type="button" class="catalog__btn-1">Применить</button>
+          <button type="button" class="catalog__btn-2">Сбросить</button>
+        </div>
       </form>
-
-      <select aria-label="Сортировка" class="select__control">
-        <option value="popular">
-          Сначала популярное
-        </option>
-        <option value="cheap">
-          Сначала дешёвые
-        </option>
-        <option value="expensive">
-          Сначала дорогие
-        </option>
-      </select>
-      <a href="#" class="button__dark">
-        <span class="visually-hidden">
-          Паказать список
-        </span>
-      </a>
-      <a href="#" class="button__dark">
-        <span class="visually-hidden">
-          Показать карточки
-        </span>
-      </a>
-      <a href="#" class="button__dark">
+      <div class="select__wrapper">
+        <h2 class="select__title">
+          Найдено гостиниц: 38
+        </h2>
+        <select aria-label="Сортировка" class="select__control">
+          <option value="popular">
+            Сначала популярное
+          </option>
+          <option value="cheap">
+            Сначала дешёвые
+          </option>
+          <option value="expensive">
+            Сначала дорогие
+          </option>
+        </select>
+        <a href="#" class="button__dark">
+          <img src="images/View.svg" alt="View" class="button__dark-img">
+          <span class="visually-hidden">
+            Паказать список
+          </span>
+        </a>
+        <a href="#" class="button__dark">
+          <img src="images/View-2.svg" alt="View" class="button__dark-img">
+          <span class="visually-hidden">
+            Показать карточки
+          </span>
+        </a>
+        <div class="button__link">
+          <a href="#" class="button__dark">
+            <img src="images/View-3.svg" alt="View" class="button__dark-img">
+        </div>
         <span class="visually-hidden">
           Показать на весь экран
         </span>
-      </a>
+        </a>
+      </div>
 
       <div class="product-card">
         <ul class="product-card__list">
           <li class="product-card__item">
             <a href="product.html" class="product-card__link">
-              <img src="#" alt="product-card-image" class="product-card__img">
+              <div class="product-card__inner">
+                <img src="images/hotel-1.jpg" alt="product-card-image" class="product-card__img">
+              </div>
               <h3 class="product-card__title">Amara Resort & Spa</h3>
             </a>
             <p class="product-card__descr">
@@ -162,16 +187,16 @@
             <p class="product-card__price">
               От 4000 ₽
             </p>
-            <button class="product-card__buy">подробнее</button>
-            <button class="product-card__buy">в избранное</button>
+            <div class="product-card__btn">
+              <a href="#">в избранное</a>
+            </div>
             <a href="product.html" class="product-card__raiting">
-              <img src="#" alt="raiting-stars" class="raiting__img">
-              <a href="index.html" class="raiting__btn">Рейтинг: 8,5</a>
+              <img src="images/Raiting-1.svg" alt="raiting-stars" class="raiting__img">
             </a>
           </li>
           <li class="product-card__item">
             <a href="product.html" class="product-card__link">
-              <img src="#" alt="product-card-image" class="product-card__img">
+              <img src="images/hotel-12.jpg" alt="product-card-image" class="product-card__img">
               <h3 class="product-card__title">Villas at Poco Diablo</h3>
             </a>
             <p class="product-card__descr">
@@ -180,16 +205,16 @@
             <p class="product-card__price">
               От 5000 ₽
             </p>
-            <button class="product-card__buy">подробнее</button>
-            <button class="product-card__buy">в избранном</button>
+            <a href="#" class="product-card__buy">подробнее</a>
+            <a href="#" class="product-card__buy">в избранном</a>
             <a href="product.html" class="product-card__raiting">
-              <img src="#" alt="raiting-stars" class="raiting__img">
+              <img src="images/Raiting-2.svg" alt="raiting-stars" class="raiting__img">
               <a href="index.html" class="raiting__btn">Рейтинг: 9,2</a>
             </a>
           </li>
           <li class="product-card__item">
             <a href="product.html" class="product-card__link">
-              <img src="#" alt="product-card-image" class="product-card__img">
+              <img src="images/hotel-3.jpg" alt="product-card-image" class="product-card__img">
               <h3 class="product-card__title">Desert Quail Inn</h3>
             </a>
             <p class="product-card__descr">
@@ -198,16 +223,16 @@
             <p class="product-card__price">
               От 2500 ₽
             </p>
-            <button class="product-card__buy">подробнее</button>
-            <button class="product-card__buy">в избранное</button>
+            <a href="#" class="product-card__buy">подробнее</a>
+            <a href="#" class="product-card__buy">в избранное</a>
             <a href="product.html" class="product-card__raiting">
-              <img src="#" alt="raiting-stars" class="raiting__img">
+              <img src="images/raiting-3.svg" alt="raiting-stars" class="raiting__img">
               <a href="index.html" class="raiting__btn">Рейтинг: 6,9</a>
             </a>
           </li>
           <li class="product-card__item">
             <a href="product.html" class="product-card__link">
-              <img src="#" alt="product-card-image" class="product-card__img">
+              <img src="images/hotel-4.jpg" alt="product-card-image" class="product-card__img">
               <h3 class="product-card__title">GreenTree Inn</h3>
             </a>
             <p class="product-card__descr">
@@ -216,59 +241,88 @@
             <p class="product-card__price">
               От 1500 ₽
             </p>
-            <button class="product-card__buy">подробнее</button>
-            <button class="product-card__buy">в избранное</button>
+            <a href="#" class="product-card__buy">подробнее</a>
+            <a href="#" class="product-card__buy">в избранное</a>
             <a href="product.html" class="product-card__raiting">
-              <img src="#" alt="raiting-stars" class="raiting__img">
+              <img src="images/raiting-4.svg" alt="raiting-stars" class="raiting__img">
               <a href="index.html" class="raiting__btn">Рейтинг: 5,0</a>
             </a>
           </li>
         </ul>
       </div>
-      <div class="pagination">
-        <div class="container">
-          <ul class="pagination__list">
-            <li class="pagintation__item">
-              <a href="#" class="pagination__link">
-                1
-              </a>
-            </li>
-            <li class="pagintation__item">
-              <a href="#" class="pagination__link">
-                2
-              </a>
-            </li>
-            <li class="pagintation__item">
-              <a href="#" class="pagination__link">
-                3
-              </a>
-            </li>
-            <li class="pagintation__item">
-              <a href="#" class="pagination__link">
+      <div class="pagintation__inner">
+        <div class="pagination">
+          <div class="container">
+            <ul class="pagination__list">
+              <li class="pagintation__item">
+                <a href="#" class="pagination__link">
+                  1
+                </a>
+              </li>
+              <li class="pagintation__item">
+                <a href="#" class="pagination__link">
+                  2
+                </a>
+              </li>
+              <li class="pagintation__item">
+                <a href="#" class="pagination__link">
+                  3
+
+                </a>
+              </li>
+              <li class="pagintation__item">
+                <a href="#" class="pagination__link">
+                  4
+
+                </a>
+              </li>
+              <li class="pagintation__item">
+                <a href="#" class="pagination__link">
+                  5
+
+              </li>
+              <li class="pagintation__item">
+                <a href="#" class="pagination__link">
+                  6
+
+              </li>
+              <li class="pagintation__item">
+                <a href="#" class="pagination__link">
+                  7
+
+              </li>
+              <li class="pagintation__item">
+                <a href="#" class="pagination__link">
+                  8
+
+              </li>
+              <li class="pagintation__item">
+                <a href="#" class="pagination__link">
+                  9
+
+              </li>
+              <li class="pagintation__item">
+                <a href="#" class="pagination__link">
+                  10
+
+                </a>
+              </li>
+            </ul>
+            <span class="pagination__select">Гостиниц на странице:</span>
+          </div>
+          <div class="select__inner">
+            <select aria-label="Сортировка" class="select__control">
+              <option value="number">
                 4
-              </a>
-            </li>
-            <li class="pagintation__item">
-              <a href="#" class="pagination__link">
-                ...
-              </a </li> <li class="pagintation__item">
-              <a href="#" class="pagination__link">
-                10
-              </a>
-            </li>
-          </ul>
-          <span class="pagination__select">Гостиниц на странице:</span>
-          <select aria-label="Сортировка" class="select__control">
-            <option value="number">
-              4
-            </option>
-            <option value="number">
-              5
-            </option>
-            <option value="number">
-              7
-            </option>
-          </select>
+              </option>
+              <option value="number">
+                5
+              </option>
+              <option value="number">
+                7
+              </option>
+            </select>
+          </div>
         </div>
       </div>
       </div>
@@ -285,28 +339,30 @@
         Только полезная информация и никакого спама, честное бойскаутское!
       </p>
       <form action="" class="maling__subs">
-        <label for=""><button class="maling__btn">Подписаться</button></label>
+        <label for=""><button type="button" class="maling__btn">Подписаться</button></label>
         <input type="text">
       </form>
     </div>
   </section>
 
-  <footer class="catalog__footer">
-    <div class="footer__inner">
-      <ul class="footer__social">
+  <footer class="catalog-footer">
+    <div class="catalog-footer__inner">
+      <ul class="catalog-footer__social">
         <li class="social__item">
-          <img src="#" alt="vk icon" class="footer__img">
+          <img src="images/vk.svg" alt="vk icon" class="footer__img">
         </li>
         <li class="social__item">
-          <img src="#" alt="telegram icon" class="footer__img">
+          <img src="images/telegram.svg" alt="telegram" class="footer__img">
         </li>
         <li class="social__item">
-          <img src="" alt="youtube icon" class="footer__img">
+          <img src="images/youtube.svg" alt="youtube" class="footer__img">
         </li>
       </ul>
-      <h2 class="footer__title"><a href="tel:88128121212">+7 (812) 812-12-12</a></h2>
+      <a class="footer__title" href="tel:88128121212">+7 (812) 812-12-12</a>
     </div>
-    <img src="#" alt="html.academy logo" class="footer__logo">
+    <a href="" class="catalog-footer__logo">
+      <img src="images/HTML Academy.svg" alt="html.academy" class="footer__img">
+    </a>
   </footer>
 
 </body>

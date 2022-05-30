@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+<link rel="stylesheet" href="style.css">
 
 <head>
   <meta charset="utf-8">
@@ -7,34 +8,39 @@
 </head>
 
 <body>
-  <header class="page__header">
+  <header class="page-header">
     <div class="container">
-      <img src="#" alt="Логотип" class="logo">
-      <nav class="naigation">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">Главная</a>
+      <a href="#" class="page-header__link">
+        <img src="images/logo.svg" alt="Логотип" class="logo">
+      </a>
+      <nav class="page-navigation">
+        <ul class="page-navigation__list">
+          <li class="page-navigation__item">
+            <a href="index.html" class="page-navigation__link">Главная</a>
           </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">О Седоне</a>
+          <li class="page-navigation__item">
+            <a href="#" class="page-navigation__link">О Седоне</a>
           </li>
-          <li class="navigation__item">
+          <li class="page-navigation__item">
             <a href="catalog.html" class="navigation__link">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation__user">
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">
-              <span class="visually__hidden">Поиск</span>
+
+        <ul class="page-navigation-user">
+          <li class="page-navigation-user__item">
+            <a href="#" class="page-navigation-user__link">
+              <span class="visually-hidden">Поиск</span>
+              <img src="images/search.svg" alt="search" class="page-navigation-user__img">
             </a>
           </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">
-              <span class="visually__hidden">Избранное</span>
+          <li class="page-navigation-user__item">
+            <a href="#" class="page-navigation-user__link">
+              <span class="visually-hidden">Избранное</span>
+              <img src="images/favorite.svg" alt="favourites" class="page-navigation-user__img">
             </a>
           </li>
-          <li class="navigation__item">
-            <a href="catalog.html" class="navigation__link">
+          <li class="page-navigation-user__item">
+            <a href="catalog.html" class="navigation-user__page">
               Хочу сюда!
             </a>
           </li>
@@ -45,24 +51,31 @@
 
 
   <main class="main-index">
-    <section class="description">
+    <section class="sedona">
       <div class="container">
-        <h1 class="visually__hidden">
+        <h1 class="visually-hidden">
           Город Седона
         </h1>
-        <img src="#" alt="Логотип города Седона" class="description__logo">
-        <h2 class="description__title">Седона — небольшой городок в Аризоне,
-          заслуживающий большего!</h2>
-        <p class="description__subtitle">
-          Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
-        </p>
-      </div>
+        <div class="sedona__title">
+          <img src="images/welcome.svg" alt="welcome" class="background__img">
+        </div>
     </section>
+
+    <section class="description">
+      <h2 class="description__title">Седона — небольшой городок в Аризоне,
+        заслуживающий большего!</h2>
+      <p class="description__subtitle">
+        Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
+      </p>
+    </section>
+
 
     <section class="advantages">
       <div class="container">
-        <h2 class="visually__hidden">Преимущества</h2>
-        <img src="#" alt="Седона" class="advantages__img">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <div class="advantages__wrapper-img">
+          <img src="images/photo-1.jpg" alt="photo-1" class="advantages__img">
+        </div>
         <h3 class="advantages__title">Настоящий городок</h3>
         <p class="advantages__thumb">— №1 —</p>
         <p class="advanteges__subtitle">
@@ -70,15 +83,18 @@
         </p>
         <ul class="advantages__list">
           <li class="advantages__item">
-            <img src="#" alt="Sedona House icon" class="advantages__img">
-            <h3 class="advantages__title">Жильё</h3>
+            <div class="advantages__inner-img">
+              <img src="images/Advantage-icon.svg" alt="Sedona House icon" class="advantages__img">
+            </div>
+            <h3 class="advantages__title">Жильё
+            </h3>
             <p class="advantages__descr">
               Рекомендуем пожить в настоящем мотеле,
               всё как в кино!
             </p>
           </li>
           <li class="advantages__item">
-            <img src="#" alt="Sedona Eat icon" class="advantages__img">
+            <img src="images/food.svg" alt="food" class="advantages__img">
             <h3 class="advantages__title">Еда</h3>
             <p class="advantages__descr">
               Всегда заказывайте
@@ -86,7 +102,7 @@
             </p>
           </li>
           <li class="advantages__item">
-            <img src="#" alt="Sedona Souvenir icon" class="advantages__img">
+            <img src="images/suvenir.svg" alt="Sedona Souvenir icon" class="advantages__img">
             <h3 class="advantages__title">Сувениры</h3>
             <p class="advantages__descr">
               Не только китайского,
@@ -94,18 +110,20 @@
             </p>
           </li>
         </ul>
-        <img src="#" alt="Седона" class="advantages__img">
-        <h3 class="advantages__title-devil">Там есть
+        <div class="advantages__wrap">
+          <img src="images/photo-2.jpg" alt="photo-2" class="advantages__img">
+        </div>
+        <h3 class="advantages__title">Там есть
           мост дьявола</h3>
-        <p class="advantages__thumb-devil">— №2 —</p>
-        <p class="advanteges__subtitle-devil">
+        <p class="advantages__thumb">— №2 —</p>
+        <p class="advanteges__subtitle">
           Да, по нему можно пройти! Если вы осмелитесь, разумеется
         </p>
         <ul class="advantages__list">
           <li class="advantages__item">
             <h3 class="advantages__title">Небольшая
               площадь</h3>
-            <p class="advantages__title-numb">
+            <p class="advantages__title">
               — №3 —
             </p>
             <p class="advantages__descr">
@@ -115,7 +133,7 @@
           <li class="advantages__item">
             <h3 class="advantages__title">Красивая
               дорога</h3>
-            <p class="advantages__title-numb">
+            <p class="advantages__title">
               — №4 —
             </p>
             <p class="advantages__descr">
@@ -125,7 +143,7 @@
           <li class="advantages__item">
             <h3 class="advantages__title">Мало
               туристов</h3>
-            <p class="advantages__title-numb">
+            <p class="advantages__title">
               — №5 —
             </p>
             <p class="advantages__descr">
@@ -158,29 +176,34 @@
         </p>
         <form action="mailto:fdgd@.ru" class="maling__subs">
           <label for="input">
-              </label>
+          </label>
           <input type="text">
+          <div class="maling__btn">
+            <button type="button">Подписаться</button>
+          </div>
         </form>
-        <button class="maling__btn">Подписаться</button>
+
       </div>
     </section>
 
-    <footer class="page__footer">
+    <footer class="page-footer">
       <div class="footer__inner">
         <ul class="footer__social">
           <li class="social__item">
-            <img src="#" alt="vk icon" class="footer__img">
+            <img src="images/vk.svg" alt="vk icon" class="footer__img">
           </li>
           <li class="social__item">
-            <img src="#" alt="telegram icon" class="footer__img">
+            <img src="images/telegram.svg" alt="telegram" class="footer__img">
           </li>
           <li class="social__item">
-            <img src="" alt="youtube icon" class="footer__img">
+            <img src="images/youtube.svg" alt="youtube" class="footer__img">
           </li>
         </ul>
-        <h2 class="footer__title"><a href="tel:88128121212">+7 (812) 812-12-12</a></h2>
+        <a class="footer__title" href="tel:88128121212">+7 (812) 812-12-12</a>
       </div>
-      <img src="#" alt="html.academy logo" class="footer__logo">
+      <a href="" class="footer__logo">
+        <img src="images/HTML Academy.svg" alt="html.academy" class="footer__img">
+      </a>
     </footer>
 
   </main>
