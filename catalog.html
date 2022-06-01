@@ -86,7 +86,7 @@
                 Инфраструктура:
               </legend>
               <ul class="catalog-filter__list">
-                <li class="catalog-filter__list-item">
+                <li class="catalog-filter__item">
                   <label class="catalog-filter__control" for="123">
                     <input name="swimming-pool" id="123" type="checkbox">
                     <span class="control__spn">
@@ -139,8 +139,8 @@
               </ul>
             </fieldset>
             <div class="catalog__btn">
-              <button type="button" class="catalog__btn-1">Применить</button>
-              <button type="button" class="catalog__btn-2">Сбросить</button>
+              <button type="button" class="catalog__btn--1">Применить</button>
+              <button type="button" class="catalog__btn--2">Сбросить</button>
             </div>
           </form>
 
@@ -160,26 +160,28 @@
               </option>
             </select>
 
-            <a href="#" class="button__dark">
-              <img src="images/View.svg" alt="View" class="button__dark-img">
+            <div class="kebab-kase">
+              <a href="#" class="kebab-kase__button--dark">
+                <img src="images/View.svg" alt="View" class="button__dark-img">
+                <span class="visually-hidden">
+                  Паказать список
+                </span>
+              </a>
+              <a href="#" class="kebab-kase__button">
+                <img src="images/View-2.svg" alt="View" class="button__dark-img">
+                <span class="visually-hidden">
+                  Показать карточки
+                </span>
+              </a>
+              <div class="button__link">
+                <a href="#" class="kebab-kase__button">
+                  <img src="images/View-3.svg" alt="View" class="button__dark-img">
+              </div>
               <span class="visually-hidden">
-                Паказать список
+                Показать на весь экран
               </span>
-            </a>
-            <a href="#" class="button__white">
-              <img src="images/View-2.svg" alt="View" class="button__dark-img">
-              <span class="visually-hidden">
-                Показать карточки
-              </span>
-            </a>
-            <div class="button__link">
-              <a href="#" class="button__white">
-                <img src="images/View-3.svg" alt="View" class="button__dark-img">
+              </a>
             </div>
-            <span class="visually-hidden">
-              Показать на весь экран
-            </span>
-            </a>
           </div>
 
           <div class="product-card">
@@ -346,7 +348,8 @@
               <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
             </div>
             <form action="htts://echo.htmlacademy.ru/" class="catalog-subscribe__form" method="post">
-              <input class="catalog-subscribe__form-input" type="text" name="catalog-subscribe-email" placeholder="Ваш e-mail">
+              <input class="catalog-subscribe__form-input" type="text" name="catalog-subscribe-email"
+                placeholder="Ваш e-mail">
               <button type="submit" class="catalog-subscribe__form-btn">Подписаться</button>
             </form>
           </div>
