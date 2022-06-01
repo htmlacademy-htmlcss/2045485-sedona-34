@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "Pt-Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+}
+
+
+@font-face {
+  font-family: "Pt-Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Pt-Sans";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Pt-Sans";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+}
+
+body{
+  font-family: "Pt-Sans",sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #ffff;
+}
+
+.header {
+  color: #000000;
+  background-color: #fff;
+}
+
+
+.menu__link  {
+  color: #000000;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+
+
+.visually-hidden {
+  display: none;
+}
+
+
+
+li {
+  list-style: none;
+}
+
+.header__content{
+  align-items: center;
+  display: block;
+  margin: 0 auto;
+  background-color: #fff;
+  background-image: url('../images/index-background.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.subscribe__inner {
+    background-image: url('images/subs-bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.header__bottom-inner {
+  text-align: center;
+  margin-bottom: 31px;
+}
+
+.header__bottom-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+}
+
+.header__bottom-description {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.sedona__title {
+  margin: 0;
+  align-items: center;
+}
+
+.maling {
+  background-image: url('images/mailing-background.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
