@@ -98,6 +98,25 @@ li {
   text-align: center;
 }
 
+.avantages__list-items {
+  color: #000000;
+  background-color: #82B3D3;
+}
+
+.advantages__list--title {
+  color: #fff;
+}
+
+.advantages__list--subtitle {
+  color: #ffff;
+}
+
+.advabtages__list--descr {
+  color: #ffff;
+}
+
+
+
 .header__bottom-description {
   font-weight: 400;
   font-size: 22px;
