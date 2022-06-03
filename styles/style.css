@@ -37,6 +37,12 @@ body {
   line-height: 26px;
   color: #000000;
   background-color: #ffff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
 }
 
 a {
@@ -56,7 +62,12 @@ a {
   margin-bottom: 5px;
 }
 
+.header__top-inner {
+  display: flex;
+}
+
 .header__menu {
+  margin: 0 auto;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
@@ -67,6 +78,15 @@ a {
 .menu__list {
   display: flex;
   justify-content: space-between;
+}
+
+.menu__list-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__link:last-child {
+  margin: 0;
 }
 
 .menu__list-item {
