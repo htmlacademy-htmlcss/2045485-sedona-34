@@ -94,9 +94,6 @@ li {
   margin-right: 34px;
 }
 
-.last-child {
-  margin-right: 0px;
-}
 
 .header__nav-link {
   font-weight: 700;
@@ -250,7 +247,6 @@ li {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   height: auto;
   width: 100%;
 }
@@ -307,7 +303,6 @@ li {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   height: auto;
   width: 100%;
 }
@@ -356,7 +351,6 @@ li {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  text-align: center;
   text-transform: uppercase;
 }
 
