@@ -560,6 +560,14 @@ legend {
 }
 
 .filter-content__input {
-
+  position: absolute;
+  appearance: none;
   border-radius: 4px;
+}
+
+.filter-content__check {
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  background-color: #fff;
 }
