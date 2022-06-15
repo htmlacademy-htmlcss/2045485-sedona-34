@@ -1,225 +1,243 @@
 <!DOCTYPE html>
-<html lang="ru">
-<link rel="stylesheet" href="styles/style.css">
+<html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Седона</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/null.css">
+  </head>
 
-<body>
-  <header class="header">
-    <div class="header__top">
+  <body>
+    <header class="header">
       <div class="container">
-        <div class="header__top-inner">
-          <div class="logo">
-            <a href="#" class="logo__link">
-              <img src="images/logo.svg" alt="logo" class="logo__img">
+        <div class="header__wrapper">
+          <div class="header__wrapper-inner">
+            <a class="header__logo">
+              <img src="images/logo.svg" alt="logo">
             </a>
+            <nav class="header__nav">
+              <ul class="header__nav-list">
+                <li class="header__nav-items">
+                  <a href="#" class="header__nav-link">
+                    Главная
+                  </a>
+                </li>
+                <li class="header__nav-items">
+                  <a href="#" class="header__nav-link">
+                    О Седоне
+                  </a>
+                </li>
+                <li class="header__nav-items last-child">
+                  <a href="#" class="header__nav-link">
+                    Гостиницы
+                  </a>
+                </li>
+              </ul>
+            </nav>
           </div>
-          <nav class="header__menu">
-            <ul class="menu__list">
-              <li class="menu__list-item">
-                <a class="menu__link menu__link--active">
-                  Главная
-                </a>
+
+          <div class="header__wrapper-inner">
+            <nav class="header__menu-user">
+              <li class="header__user-list">
+                <div href="#" class="header__user-link">
+                  <img src="images/search.svg" alt="">
+                </div>
               </li>
-              <li class="menu__list-item">
-                <a href="#" class="menu__link">
-                  О Седоне
-                </a>
+              <li class="header__user-list">
+                <div href="#" class="header__user-link">
+                  <img src="images/favorite.svg" alt="">
+                </div>
               </li>
-              <li class="menu__list-item">
-                <a href="#" class="menu__link">
-                  Гостиницы
-                </a>
+              <li class="header__user-list">
+                <div href="#" class="header__user-btn">
+                  <button>
+                    <p>Хочу сюда!</p>
+                  </button>
+                </div>
               </li>
-              <li class="menu__list-item">
-                <a href="#" class="menu__link">
-                  <img src="images/search.svg" alt="search" class="menu__link-img">
-                </a>
-              </li>
-              <li class="menu__list-item">
-                <a href="#" class="menu__link">
-                  <img src="images/favorite.svg" alt="favorite" class="menu__link-img">
-                </a>
-              </li>
-              <li class="menu__list-item">
-                <a href="#" class="menu__link">
-                  <img src="images/navbtn.svg" alt="button" class="menu__link-img">
-                </a>
-              </li>
-            </ul>
-          </nav>
+            </nav>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="header__content">
-      <div class="container">
-        <div class="header__content-inner">
-          <img src="images/welcome.svg" alt="" class="header__content-img">
-        </div>
+    </header>
+
+    <div class="intro">
+      <h1 class="visually-hidden">
+        Sedona
+      </h1>
+      <div class="intro__inner">
+        <img src="images/welcome.svg" alt="" class="intro__img">
+      </div>
+      <div class="intro__figure">
+        <img src="images/divider.svg" alt="">
       </div>
     </div>
-    <div class="header__bottom">
-      <div class="container">
-        <div class="header__bottom-inner">
-          <h1 class="header__bottom-title">
+
+    <main class="index-main main-container">
+      <section class="benefit">
+        <div class="container">
+          <h2 class="benefit__title">
             Седона — небольшой городок в Аризоне,
             заслуживающий большего!
-          </h1>
-          <p class="header__bottom-description">
-            Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
-          </p>
+          </h2>
+          <div class="benefit__subtitle">
+            <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+          </div>
         </div>
-      </div>
-    </div>
-  </header>
+      </section>
 
-  <main class="main-index">
-    <section class="advantages">
-      <div class="container">
+      <section class="advantages">
         <div class="advantages__inner">
-          <ul class="advantages__list">
-            <li class="avantages__list-items">
-              <h2 class="advantages__list--title">Настоящий городок</h2>
-              <p class="advantages__list--subtitle">— №1 —</p>
-              <p class="advabtages__list--descr">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-              <div class="advantages__list-img">
-                <img src="images/photo-1.jpg" alt="advantages-img">
-              </div>
-            </li>
+          <div class="advantages__row  descr">
+            <div class="advantages__column small">
+              <h2 class="advantages__title">Настоящий<br>городок</h2>
+              <p class="advantages__subtitle">— №1 —</p>
+              <p class="advantages__text">Седона — не аттракцион для <br> туристов, там течёт своя<br> жизнь
+              </p>
+            </div>
+            <div class="advantages__column big">
+              <img src="images/photo-1.jpg" alt="photo-1">
+            </div>
+          </div>
 
-            <li class="avantages__list-items">
-              <div class="advantages__list-img">
-                <img src="images/advantages_img-1.svg" alt="advantages-img">
-                <h2 class="advantages__list-title">Жильё</h2>
-                <p class="advantages__list-descr">Рекомендуем пожить в настоящем мотеле,
-                  всё как в кино!</p>
+          <div class="advantages__row-list">
+            <div class="advantages__block-list">
+              <div class="advantages__img">
+                <img src="images/advantages_img-1.svg" alt="advantages_img-">
               </div>
-            </li>
-            <li class="avantages__list-items">
-              <div class="advantages__list-img">
-                <img src="images/advantages_img-2.svg" alt="advantages-img">
-                <h3 class="advantages__list-title">Еда</h3>
-                <p class="advantages__list-descr">Всегда заказывайте
-                  топовый фирменный бургер, вы не разочаруетесь!</p>
-              </div>
-            </li>
-            <li class="avantages__list-items">
-              <div class="advantages__list-img">
-                <img src="images/advantages_img-3.svg" alt="advantages-img">
-                <h3 class="advantages__list-title">Сувениры</h3>
-                <p class="advantages__list-descr">Не только китайского,
-                  но и настоящего местного производства!</p>
-              </div>
-            </li>
+              <h3 class="advantages__list-title">Жильё</h3>
 
-            <li class="avantages__list-items">
-              <div class="advantages__list-img">
-                <h3 class="advantages__list-title">Там есть
-                  мост дьявола</h3>
-                <p class="advantages__list-descr">— №2 —</p>
-                <p class="advantages__list-descr">Да, по нему можно пройти! Если вы осмелитесь, разумеется
-                </p>
-                <img src="images/photo-2.jpg" alt="avantages-img">
+              <p class="advantages__list-description">
+                Рекомендуем пожить<br>в настоящем мотеле,<br>
+                всё как в кино!
+              </p>
+            </div>
+            <div class="advantages__block-list">
+              <div class="advantages__img">
+                <img src="images/advantages_img-2.svg" alt="advantages_img-">
               </div>
-            </li>
+              <h3 class="advantages__list-title">Еда</h3>
 
-            <li class="avantages__list-items">
-              <div class="advantages__list-img">
-                <h3 class="advantages__list-title">Небольшая
-                  площадь</h3>
-                <p class="advantages__list-descr">— №3 —</p>
-                <p class="advantages__list-descr">Все достопримечательности находятся очень близко</p>
+              <p class="advantages__list-description">
+                Всегда заказывайте<br>
+                топовый фирменный бургер,<br> вы не разочаруетесь!
+              </p>
+            </div>
+            <div class="advantages__block-list">
+              <div class="advantages__img">
+                <img src="images/advantages_img-3.svg" alt="advantages_img-">
               </div>
-            </li>
-            <li class="avantages__list-items">
-              <div class="advantages__list-img">
-                <h3 class="advantages__list-title">Красивая
-                  дорога</h3>
-                <p class="advantages__list-descr">— №4 —<p>
-                    <p class="advantages__list-descr">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-              </div>
-            </li>
-            <li class="avantages__list-items">
-              <div class="advantages__list-img">
-                <h3 class="advantages__list-title">Мало
+              <h3 class="advantages__list-title">Сувениры</h3>
+              <p class="advantages__list-description">
+                Не только китайского,<br>
+                но и настоящего местного<br> производства!
+              </p>
+            </div>
+          </div>
+
+          <div class="advantages__row descr second">
+            <div class="advantages__column small">
+              <h2 class="advantages__title">Настоящий<br>городок</h2>
+              <p class="advantages__subtitle">— №1 —</p>
+              <p class="advantages__text">Седона — не аттракцион для <br> туристов, там течёт своя<br> жизнь
+              </p>
+            </div>
+            <div class="advantages__column big">
+              <img src="images/photo-2.jpg" alt="photo-1">
+            </div>
+          </div>
+
+          <div class="advantages__row-item">
+            <div class="advantages__block">
+              <h3 class="advantages__block-title">Небольшая <br>
+                площадь</h3>
+              <p class="advantages__block-subtittle">
+                — №3 —
+              </p>
+              <p class="advantages__block-description">
+                Все достопримечательности<br>находятся очень близко
+              </p>
+            </div>
+            <div class="advantages__block">
+              <h3 class="advantages__block-title">Красивая <br>
+                дорога</h3>
+              <p class="advantages__block-subtittle">
+                — №4 —
+              </p>
+              <p class="advantages__block-description">
+                Ехать в Седону из Лас-Вегаса <br> совсем не скучно!
+              </p>
+            </div>
+            <div class="advantages__block">
+              <h3 class="advantages__block-title">Мало<b>
                   туристов</h3>
-                <p class="advantages__list-descr">— №5 —</p>
-                <p class="advantages__list-descr">Большинство едет в Гранд Каньон и толпится там</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="search">
-      <div class="container">
-        <div class="search__wrap">
-          <div class="search__title">
-            <h2>Заинтересовались?</h2>
+              <p class="advantages__block-subtittle">
+                — №5 —
+              </p>
+              <p class="advantages__block-description">
+                Большинство едет в Гранд<br>Каньон и толпится там
+              </p>
+            </div>
           </div>
-          <div class="search__descr">
-            <p>
-              Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне
+        </div>
+        </div>
+      </section>
+
+      <section class="search">
+        <div class="container">
+          <div class="search__inner">
+            <h2 class="search__title">Заинтересовались?</h2>
+            <p class="search__descr">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения
+              гостиниц
+              в
+              Седоне
             </p>
+            <div class="search__btn">
+              <button>ПОИСК ГОСТИНИЦЫ В седоне</button>
+            </div>
           </div>
-          <a href="#" class="search__link">
-            <img src="images/search-link.svg" alt="search-button" class="search__link-img">
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="subscribe">
-      <div class="container">
+      </section>
+      <section class="subscribe">
         <div class="subscribe__inner">
           <div class="subscribe__title">
             <h2>Подпишитесь на рассылку</h2>
           </div>
-          <div class="subscribe__descr">
+          <div class="subscribe__description">
             <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
           </div>
-          <form action="htts://echo.htmlacademy.ru/" class="subscribe__form" method="post">
-            <input class="subscribe__form-input" type="text" name="subscribe-email" placeholder="Ваш e-mail">
-            <button type="submit" class="subscribe__form-btn">Подписаться</button>
-          </form>
+          <div class="subscribe__form">
+            <form action="#" method="get" class="form">
+              <input type="email" name="e-mail" value="" class="form__input" placeholder="Ваш e-mail">
+              <button class="form__button">Подписаться</button>
+            </form>
+          </div>
         </div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__inner">
-          <a href="tel:+78128121212" class="footer__phone">+7 (812) 812-12-12</a>
-          <ul class="footer__list">
-            <li class="footer__list-item">
-              <a href="#" class="footer__link">
-                <img src="images/vk.svg" alt="vk-icon" class="footer__link-img">
-              </a>
-            </li>
-            <li class="footer__list-item">
-              <a href="" class="footer__link">
-                <img src="images/telegram.svg" alt="telegram-icon" class="footer__link-img">
-              </a>
-            </li>
-            <li class="footer__list-item">
-              <a href="" class="footer__link">
-                <img src="images/youtube.svg" alt="youtube-icon" class="footer__link-img">
-              </a>
-            </li>
-            <li class="footer__list-item">
-              <a href="#" class="footer__link">
-                <img src="images/HTML Academy.svg" alt="HTML-Academy" class="footer__link-img">
-              </a>
-            </li>
-          </ul>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__inner">
+        <div class="page-footer__social">
+          <a href="#" class="page-footer__img">
+            <img src="images/page-footer-img-1.svg" alt="vk-icon">
+          </a>
+          <a href="#" class="page-footer__img">
+            <img src="images/page-footer-img-2.svg" alt="telegram-icon">
+          </a>
+          <a href="#" class="page-footer__img">
+            <img src="images/page-footer-img-3.svg" alt="youtube-icon">
+          </a>
         </div>
+        <a href="tel:+78128121212" class="page-footer__phone">
+          +7 (812) 812-12-12
+        </a>
+        <a href="" class="page-footer__logo">
+          <img src="images/page-footer-logo.svg" alt="htmlacademy-logo">
+        </a>
       </div>
     </footer>
-  </main>
-</body>
+  </body>
 
 </html>
