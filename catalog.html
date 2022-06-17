@@ -93,21 +93,21 @@
                         <label for="" class="filter-content__label">
                           <input type="checkbox" class="filter-content__input" checked>
                           <span class="filter-content__check"></span>
-                          Бассейн
+                          <p class="filter-content__text">Бассейн</p>
                         </label>
                       </div>
                       <div class="filter-content__group-2">
                         <label for="" class="filter-content__label">
                           <input type="checkbox" class="filter-content__input" checked>
                           <span class="filter-content__check"></span>
-                          Парковка
+                          <p class="filter-content__text">Парковка</p>
                         </label>
                       </div>
-                      <div class="filter-content__group-2">
+                      <div class="filter-content__group-3">
                         <label for="" class="filter-content__label">
-                          <input type="checkbox" class="filter-content__input" checked>
+                          <input type="checkbox" class="filter-content__input">
                           <span class="filter-content__check"></span>
-                          Wi-Fi
+                          <p class="filter-content__text">WI-FI</p>
                         </label>
                       </div>
                     </div>
@@ -115,27 +115,30 @@
               </fieldset>
               </form>
 
-              <div class="filter-content__checkbox">
+              <div class="filter-content__radio">
                 <form action="#" class="filter-content__form" method="get">
                   <fieldset>
                     <legend>Тип жилья:</legend>
                     <div class="filter-content__group">
                       <div class="filter-content__group-1">
-                        <input type="radio" class="filter-content__input" checked>
                         <label for="" class="filter-content__label">
-                          Бассейн
+                          <input type="radio" class="filter-content__input radio-btn" checked>
+                          <span class="filter-content__check radio"></span>
+                          <p class="filter-content__text">Гостиница</p>
                         </label>
                       </div>
                       <div class="filter-content__group-2">
-                        <input type="radio" class="filter-content__input">
                         <label for="" class="filter-content__label">
-                          Парковка
+                          <input type="radio" class="filter-content__input radio-btn">
+                          <span class="filter-content__check radio"></span>
+                          <p class="filter-content__text">Мотель</p>
                         </label>
                       </div>
-                      <div class="filter-content__group-2">
-                        <input type="radio" class="filter-content__input">
+                      <div class="filter-content__group-3">
                         <label for="" class="filter-content__label">
-                          Wi-Fi
+                          <input type="radio" class="filter-content__input">
+                          <span class="filter-content__check radio"></span>
+                          <p class="filter-content__text">Апартаменты</p>
                         </label>
                       </div>
                     </div>
@@ -150,6 +153,140 @@
           </div>
         </div>
         </div>
+        </div>
+      </section>
+
+      <section class="catalog">
+        <div class="container">
+          <div class="catalog__inner">
+            <div class="catalog__inner-top">
+              <h2 class="catalog__title">
+                Найдено гостиниц: 38
+              </h2>
+              <div class="select__form">
+                <div class="select_wrap">
+                  <select name="select-catalog" id="" class="catalog__select">
+                    <option value="1">Сначала дешёвые</option>
+                    <option value="2">Сначала дорогие</option>
+                  </select>
+                </div>
+              </div>
+              <div class="catalog__view">
+                <div href="#" class="catalog__view-box">
+                  <a href="#" class="catalog__link">
+                    <img src="images/View-1.svg" alt="">
+                  </a>
+                  <a href="#" class="catalog__link">
+                    <img src="images/View-2.svg" alt="">
+                  </a>
+                  <a href="#" class="catalog__link">
+                    <img src="images/View-3.svg" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="catalog__inner-content">
+              <ul class="catalog-card__list">
+                <li class="catalog-card__item">
+                  <div class="catalog__card">
+                    <div class="catalog-card__img">
+                      <img src="images/catalog-card_img-1.jpg" alt="card-image">
+                    </div>
+                    <h2 class="catalog-card__title">
+                      Amara Resort & Spa
+                    </h2>
+                    <div class="catalog-card__subtitle">
+                      <p>Гостиница</p>
+                      <p>От 4000 ₽</p>
+                    </div>
+                    <button class="catalog-card__btn">
+                      подробнее
+                    </button>
+                    <button class="catalog-card__btn">
+                      в избранное
+                    </button>
+                    <div class="catalog-card__raiting">
+                      <img src="images/raiting-icon-1.svg" alt="raiting-icon">
+                    </div>
+                  </div>
+                </li>
+                <li class="catalog-card__item">
+                  <div class="catalog__card">
+                    <div class="catalog-card__img">
+                      <img src="images/catalog-card_img-2.jpg" alt="card-image">
+                    </div>
+                    <h2 class="catalog-card__title">
+                      Villas at Poco Diablo
+                    </h2>
+                    <div class="catalog-card__subtitle">
+                      <p>Гостиница</p>
+                      <p>От 5000 ₽</p>
+                    </div>
+                    <button class="catalog-card__btn">
+                      подробнее
+                    </button>
+                    <button class="catalog-card__btn">
+                      в избранном
+                    </button>
+                    <div class="catalog-card__raiting">
+                      <img src="images/raiting-icon-2.svg" alt="raiting-icon">
+                    </div>
+                  </div>
+                </li>
+                <li class="catalog-card__item">
+                  <div class="catalog__card">
+                    <div class="catalog-card__img">
+                      <img src="images/catalog-card_img-3.jpg" alt="card-image">
+                    </div>
+                    <h2 class="catalog-card__title">
+                      Desert Quail Inn
+                    </h2>
+                    <div class="catalog-card__subtitle">
+                      <p>Гостиница</p>
+                      <p>От 2500 ₽</p>
+                    </div>
+                    <button class="catalog-card__btn">
+                      подробнее
+                    </button>
+                    <button class="catalog-card__btn">
+                      в избранное
+                    </button>
+                    <div class="catalog-card__raiting">
+                      <img src="images/raiting-icon-3.svg" alt="raiting-icon">
+                    </div>
+                  </div>
+                </li>
+                <li class="catalog-card__card-item">
+                  <div class="catalog__card">
+                    <div class="catalog-card__img">
+                      <img src="images/catalog-card_img-4.jpg" alt="card-image">
+                    </div>
+                    <h2 class="catalog-card__title">
+                      GreenTree Inn
+                    </h2>
+                    <div class="catalog-card__subtitle">
+                      <p>Гостиница</p>
+                      <p>От 1500 ₽</p>
+                    </div>
+                    <button class="catalog-card__btn">
+                      подробнее
+                    </button>
+                    <button class="catalog-card__btn">
+                      в избранное
+                    </button>
+                    <div class="catalog-card__raiting">
+                      <img src="images/raiting-icon-4.svg" alt="raiting-icon">
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="catalog__inner-bottom">
+
+            </div>
+          </div>
         </div>
       </section>
     </main>
