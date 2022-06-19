@@ -567,6 +567,7 @@ legend {
 }
 
 .filter-content__check {
+
   position: absolute;
   width: 1em;
   height: 1em;
@@ -693,12 +694,12 @@ legend {
 
 /* catalog-view */
 
-.catalog__view-box {
+.kebab-case__box {
   display: flex;
   justify-content: space-between;
 }
 
-.catalog__link {
+.kebab-case__link {
   margin-right: 8px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
