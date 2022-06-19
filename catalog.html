@@ -93,21 +93,21 @@
                         <label for="" class="filter-content__label">
                           <input type="checkbox" class="filter-content__input" checked>
                           <span class="filter-content__check"></span>
-                          Бассейн
+                          <p class="filter-content__text">Бассейн</p>
                         </label>
                       </div>
                       <div class="filter-content__group-2">
                         <label for="" class="filter-content__label">
                           <input type="checkbox" class="filter-content__input" checked>
                           <span class="filter-content__check"></span>
-                          Парковка
+                          <p class="filter-content__text">Парковка</p>
                         </label>
                       </div>
-                      <div class="filter-content__group-2">
+                      <div class="filter-content__group-3">
                         <label for="" class="filter-content__label">
-                          <input type="checkbox" class="filter-content__input" checked>
+                          <input type="checkbox" class="filter-content__input">
                           <span class="filter-content__check"></span>
-                          Wi-Fi
+                          <p class="filter-content__text">WI-FI</p>
                         </label>
                       </div>
                     </div>
@@ -115,27 +115,30 @@
               </fieldset>
               </form>
 
-              <div class="filter-content__checkbox">
+              <div class="filter-content__radio">
                 <form action="#" class="filter-content__form" method="get">
                   <fieldset>
                     <legend>Тип жилья:</legend>
                     <div class="filter-content__group">
                       <div class="filter-content__group-1">
-                        <input type="radio" class="filter-content__input" checked>
                         <label for="" class="filter-content__label">
-                          Бассейн
+                          <input type="radio" class="filter-content__input radio-btn" checked>
+                          <span class="filter-content__check radio"></span>
+                          <p class="filter-content__text">Гостиница</p>
                         </label>
                       </div>
                       <div class="filter-content__group-2">
-                        <input type="radio" class="filter-content__input">
                         <label for="" class="filter-content__label">
-                          Парковка
+                          <input type="radio" class="filter-content__input radio-btn">
+                          <span class="filter-content__check radio"></span>
+                          <p class="filter-content__text">Мотель</p>
                         </label>
                       </div>
-                      <div class="filter-content__group-2">
-                        <input type="radio" class="filter-content__input">
+                      <div class="filter-content__group-3">
                         <label for="" class="filter-content__label">
-                          Wi-Fi
+                          <input type="radio" class="filter-content__input">
+                          <span class="filter-content__check radio"></span>
+                          <p class="filter-content__text">Апартаменты</p>
                         </label>
                       </div>
                     </div>
@@ -152,7 +155,229 @@
         </div>
         </div>
       </section>
+
+      <section class="catalog">
+        <div class="container">
+          <div class="catalog__inner">
+            <div class="catalog__inner-top">
+              <h2 class="catalog__title">
+                Найдено гостиниц: 38
+              </h2>
+              <div class="select__form">
+                <div class="select_wrap">
+                  <select name="select-catalog" id="" class="catalog__select">
+                    <option value="1">Сначала дешёвые</option>
+                    <option value="2">Сначала дорогие</option>
+                  </select>
+                </div>
+              </div>
+              <div class="catalog__view">
+                <div href="#" class="catalog__view-box">
+                  <a href="#" class="catalog__link">
+                    <img src="images/View-1.svg" alt="">
+                  </a>
+                  <a href="#" class="catalog__link">
+                    <img src="images/View-2.svg" alt="">
+                  </a>
+                  <a href="#" class="catalog__link">
+                    <img src="images/View-3.svg" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="catalog__inner-content">
+              <ul class="catalog-card__list">
+                <li class="catalog-card__item">
+                  <div class="catalog__card">
+                    <div class="catalog-card__img">
+                      <img src="images/catalog-card_img-1.jpg" alt="card-image">
+                    </div>
+                    <h2 class="catalog-card__title">
+                      Amara Resort & Spa
+                    </h2>
+                    <div class="catalog-card__subtitle">
+                      <p>Гостиница</p>
+                      <p>От 4000 ₽</p>
+                    </div>
+                    <div class="catalog-card__buttons">
+                      <button class="catalog-card__btn">
+                        подробнее
+                      </button>
+                      <button class="catalog-card__btn--active">
+                        в избранное
+                      </button>
+                    </div>
+                    <div class="catalog-card__raiting">
+                      <img src="images/raiting-icon-1.svg" alt="raiting-icon">
+                    </div>
+                  </div>
+                </li>
+                <li class="catalog-card__item">
+                  <div class="catalog__card">
+                    <div class="catalog-card__img">
+                      <img src="images/catalog-card_img-2.jpg" alt="card-image">
+                    </div>
+                    <h2 class="catalog-card__title">
+                      Villas at Poco Diablo
+                    </h2>
+                    <div class="catalog-card__subtitle">
+                      <p>Гостиница</p>
+                      <p>От 5000 ₽</p>
+                    </div>
+                    <div class="catalog-card__buttons">
+                      <button class="catalog-card__btn">
+                        подробнее
+                      </button>
+                      <button class="catalog-card__btn--active">
+                        в избранном
+                      </button>
+                    </div>
+                    <div class="catalog-card__raiting">
+                      <img src="images/raiting-icon-2.svg" alt="raiting-icon">
+                    </div>
+                  </div>
+                </li>
+                <li class="catalog-card__item">
+                  <div class="catalog__card">
+                    <div class="catalog-card__img">
+                      <img src="images/catalog-card_img-3.jpg" alt="card-image">
+                    </div>
+                    <h2 class="catalog-card__title">
+                      Desert Quail Inn
+                    </h2>
+                    <div class="catalog-card__subtitle">
+                      <p>Гостиница</p>
+                      <p>От 2500 ₽</p>
+                    </div>
+                    <div class="catalog-card__buttons">
+                      <button class="catalog-card__btn">
+                        подробнее
+                      </button>
+                      <button class="catalog-card__btn--active">
+                        в избранное
+                      </button>
+                    </div>
+                    <div class="catalog-card__raiting">
+                      <img src="images/raiting-icon-3.svg" alt="raiting-icon">
+                    </div>
+                  </div>
+                </li>
+                <li class="catalog-card__card-item">
+                  <div class="catalog__card">
+                    <div class="catalog-card__img">
+                      <img src="images/catalog-card_img-4.jpg" alt="card-image">
+                    </div>
+                    <h2 class="catalog-card__title">
+                      GreenTree Inn
+                    </h2>
+                    <div class="catalog-card__subtitle">
+                      <p>Гостиница</p>
+                      <p>От 1500 ₽</p>
+                    </div>
+                    <div class="catalog-card__buttons">
+                      <button class="catalog-card__btn">
+                        подробнее
+                      </button>
+                      <button class="catalog-card__btn--active">
+                        в избранное
+                      </button>
+                    </div>
+                    <div class="catalog-card__raiting">
+                      <img src="images/raiting-icon-4.svg" alt="raiting-icon">
+                    </div>
+                  </div>
+                </li>
+                <div class="catalog__divider">
+                  <img src="images/divider-6.svg" alt="divider">
+                </div>
+              </ul>
+            </div>
+
+
+            <div class="catalog-inner__bottom">
+              <div class="catalog__pagination">
+                <div class="pagintation__block">
+                  <a href="" class="pagination__link">
+                    1
+                  </a>
+                  <a href="" class="pagination__link">
+                    2
+                  </a>
+                  <a href="" class="pagination__link">
+                    3
+                  </a>
+                  <a href="" class="pagination__link">
+                    4
+                  </a>
+                  <a href="" class="pagination__link">
+                    ...
+                  </a>
+                  <a href="" class="pagination__link">
+                    10
+                  </a>
+                </div>
+              </div>
+              <div class="catalog__descr">
+                <p>Гостиниц на странице:</p>
+              </div>
+              <div class="catalog__pagination-select">
+                <div class="select__form">
+                  <div class="select__inner">
+                    <select name="select-catalog" id="" class="pagination__select action">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="3">4</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="subscribe">
+        <div class="subscribe__inner--catalog">
+          <div class="subscribe__title--catalog">
+            <h2>Подпишитесь на рассылку</h2>
+          </div>
+          <div class="subscribe__description--catalog">
+            <p>Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+          </div>
+          <div class="subscribe__form">
+            <form action="#" method="get" class="form">
+              <input type="email" name="e-mail" value="" class="form__input" placeholder="Ваш e-mail">
+              <button class="form__button">Подписаться</button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__inner">
+        <div class="page-footer__social">
+          <a href="#" class="page-footer__img">
+            <img src="images/page-footer-img-1.svg" alt="vk-icon">
+          </a>
+          <a href="#" class="page-footer__img">
+            <img src="images/page-footer-img-2.svg" alt="telegram-icon">
+          </a>
+          <a href="#" class="page-footer__img">
+            <img src="images/page-footer-img-3.svg" alt="youtube-icon">
+          </a>
+        </div>
+        <a href="tel:+78128121212" class="page-footer__phone">
+          +7 (812) 812-12-12
+        </a>
+        <a href="" class="page-footer__logo">
+          <img src="images/page-footer-logo.svg" alt="htmlacademy-logo">
+        </a>
+      </div>
+    </footer>
   </body>
 
 </html>
