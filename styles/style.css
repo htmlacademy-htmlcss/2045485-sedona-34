@@ -810,11 +810,11 @@ legend {
   border: 1px solid #82B3D3;
 }
 
-.catalog__pagination {
+.catalog-bottom__pagination {
   margin-bottom: 30px;
 }
 
-.catalog-inner__bottom {
+.catalog-bottom {
   display: flex;
   justify-content: space-between;
 }
