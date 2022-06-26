@@ -164,30 +164,31 @@
                 Найдено гостиниц: 38
               </h2>
               <div class="select__form">
-                <div class="select_wrap">
+                <div class="select__wrap">
                   <select name="select-catalog" id="" class="catalog__select">
                     <option value="1">Сначала дешёвые</option>
                     <option value="2">Сначала дорогие</option>
                   </select>
                 </div>
               </div>
-              <div class="catalog__view">
-                <div href="#" class="catalog__view-box">
-                  <a href="#" class="catalog__link">
-                    <img src="images/View-1.svg" alt="">
+
+              <div class="catalog-view">
+                <div href="#" class="catalog-view__box">
+                  <a href="#" class="catalog-view__link">
+                    <img src="images/View-1.svg" alt="view-box">
                   </a>
-                  <a href="#" class="catalog__link">
-                    <img src="images/View-2.svg" alt="">
+                  <a href="#" class="catalog-view__link">
+                    <img src="images/View-2.svg" alt="view-box">
                   </a>
-                  <a href="#" class="catalog__link">
-                    <img src="images/View-3.svg" alt="">
+                  <a href="#" class="catalog-view__link">
+                    <img src="images/View-3.svg" alt="view-box">
                   </a>
                 </div>
               </div>
             </div>
 
 
-            <div class="catalog__inner-content">
+            <div class="catalog-card">
               <ul class="catalog-card__list">
                 <li class="catalog-card__item">
                   <div class="catalog__card">
@@ -201,13 +202,13 @@
                       <p>Гостиница</p>
                       <p>От 4000 ₽</p>
                     </div>
-                    <div class="catalog-card__buttons">
-                      <button class="catalog-card__btn">
+                    <div class="card-buttons">
+                      <a href="#" class="card-buttons__link">
                         подробнее
-                      </button>
-                      <button class="catalog-card__btn--active">
+                      </a>
+                      <a href="#" class="card-buttons__link--active">
                         в избранное
-                      </button>
+                      </a>
                     </div>
                     <div class="catalog-card__raiting">
                       <img src="images/raiting-icon-1.svg" alt="raiting-icon">
@@ -226,13 +227,13 @@
                       <p>Гостиница</p>
                       <p>От 5000 ₽</p>
                     </div>
-                    <div class="catalog-card__buttons">
-                      <button class="catalog-card__btn">
+                    <div class="card-buttons">
+                      <a href="#" class="card-buttons__link">
                         подробнее
-                      </button>
-                      <button class="catalog-card__btn--active">
-                        в избранном
-                      </button>
+                      </a>
+                      <a href="#" class="card-buttons__link--active">
+                        в избранное
+                      </a>
                     </div>
                     <div class="catalog-card__raiting">
                       <img src="images/raiting-icon-2.svg" alt="raiting-icon">
@@ -251,13 +252,13 @@
                       <p>Гостиница</p>
                       <p>От 2500 ₽</p>
                     </div>
-                    <div class="catalog-card__buttons">
-                      <button class="catalog-card__btn">
+                    <div class="card-buttons">
+                      <a href="#" class="card-buttons__link">
                         подробнее
-                      </button>
-                      <button class="catalog-card__btn--active">
+                      </a>
+                      <a href="#" class="card-buttons__link--active">
                         в избранное
-                      </button>
+                      </a>
                     </div>
                     <div class="catalog-card__raiting">
                       <img src="images/raiting-icon-3.svg" alt="raiting-icon">
@@ -276,75 +277,70 @@
                       <p>Гостиница</p>
                       <p>От 1500 ₽</p>
                     </div>
-                    <div class="catalog-card__buttons">
-                      <button class="catalog-card__btn">
+                    <div class="card-buttons">
+                      <a href="#" class="card-buttons__link">
                         подробнее
-                      </button>
-                      <button class="catalog-card__btn--active">
+                      </a>
+                      <a href="#" class="card-buttons__link--active">
                         в избранное
-                      </button>
+                      </a>
                     </div>
                     <div class="catalog-card__raiting">
                       <img src="images/raiting-icon-4.svg" alt="raiting-icon">
                     </div>
                   </div>
                 </li>
-                <div class="catalog__divider">
-                  <img src="images/divider-6.svg" alt="divider">
-                </div>
               </ul>
             </div>
 
-
-            <div class="catalog-inner__bottom">
-              <div class="catalog__pagination">
-                <div class="pagintation__block">
-                  <a href="" class="pagination__link">
-                    1
-                  </a>
-                  <a href="" class="pagination__link">
-                    2
-                  </a>
-                  <a href="" class="pagination__link">
-                    3
-                  </a>
-                  <a href="" class="pagination__link">
-                    4
-                  </a>
-                  <a href="" class="pagination__link">
-                    ...
-                  </a>
-                  <a href="" class="pagination__link">
-                    10
-                  </a>
+            <div class="catalog-pagination">
+              <div class="catalog-pagination__link">
+                <ul class="catalog-pagination__list">
+                  <li class="catalog-pagination__item">
+                    <a href="#">1</a>
+                  </li>
+                  <li class="catalog-pagination__item">
+                    <a href="#">2</a>
+                  </li>
+                  <li class="catalog-pagination__item">
+                    <a href="#">3</a>
+                  </li>
+                  <li class="catalog-pagination__item">
+                    <a href="#">4</a>
+                  </li>
+                  <li class="catalog-pagination__item">
+                    <a href="#">5</a>
+                  </li>
+                  <li class="catalog-pagination__item">
+                    <a href="#">6</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="catalog-pagination__drop">
+                <div class="catalog-pagination__descr">
+                  <p>Гостиниц на странице:</p>
                 </div>
-              </div>
-              <div class="catalog__descr">
-                <p>Гостиниц на странице:</p>
-              </div>
-              <div class="catalog__pagination-select">
-                <div class="select__form">
-                  <div class="select__inner">
-                    <select name="select-catalog" id="" class="pagination__select action">
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="3">4</option>
-                    </select>
-                  </div>
+                <div class="catalog-pagination__select">
+                  <select name="pagination-select" id="" class="pagination__select">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </section>
 
       <section class="subscribe">
-        <div class="subscribe__inner--catalog">
-          <div class="subscribe__title--catalog">
+        <div class="subscribe__catalog">
+          <div class="subscribe__form-title">
             <h2>Подпишитесь на рассылку</h2>
           </div>
-          <div class="subscribe__description--catalog">
+          <div class="subscribe__form-descr">
             <p>Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           </div>
           <div class="subscribe__form">
