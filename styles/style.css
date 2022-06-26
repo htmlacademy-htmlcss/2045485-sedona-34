@@ -661,32 +661,12 @@ legend {
 /* SELECT */
 
 .catalog__select {
-  appearance: none;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   outline: none;
   padding: 14px 123px 13px 19px;
   cursor: pointer;
   width: 100%;
-}
-
-.select__wrap::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 15px;
-  transform: translateY(-50%);
-  display: block;
-  width: 10px;
-  height: 10px;
-  pointer-events: none;
-  background-image: url('../images/select_treangle.svg');
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-.select_wrap {
-  position: relative;
 }
 
 /* catalog-view */
@@ -712,11 +692,11 @@ legend {
 
 /* catalog-content */
 .catalog-card__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 80px;
-  /* margin-bottom: 66px; */
+  margin-top: 57px;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 18px;
+  margin-bottom: 66px;
 }
 
 .catalog__card {
@@ -736,153 +716,102 @@ legend {
 .catalog-card__subtitle {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .catalog-card__subtitle p {
-  padding-right: 70px;
+  padding-right: 90px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 /* Catalog button */
 .card-buttons {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 16px;
+  margin-bottom: 26px;
 }
 
 .card-buttons__link {
   background: #756157;
-  border-radius: 4px;
-  padding: 8px 20px 8px 20px;
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  color: #FFFFFF;
   text-transform: uppercase;
-  color: #fff;
-  margin-right: 7px;
-}
-
-.catalog-card__raiting {
-  margin-right: 3px;
+  border-radius: 4px;
+  padding: 9px 15px 9px 15px;
 }
 
 .card-buttons__link--active {
   background: #82B3D3;
   border-radius: 4px;
-  padding: 8px 20px 8px 20px;
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: #fff;
-  margin-right: 7px;
+  padding: 9px 15px 9px 15px;
+  margin-left: 50px;
 }
 
-.catalog__divider {
-  margin-top: 66px;
-  margin-bottom: 30px;
-}
+.catalog__divider {}
 
-/* catalog-buttom */
+
 /* pagination */
+.catalog-pagination {
+  padding-top: 70px;
+  border-top: 1px solid #E6E6E6;
+  display: flex;
+  justify-content: space-between;
+}
 
+.catalog-pagination__link {
+  margin-top: 5px;
+}
 
+.catalog-pagination__list {
+  display: flex;
+  justify-content: space-between;
+}
 
-.pagination__link {
-  width: 55px;
-  height: 55px;
-  margin-bottom: 40px;
-  align-items: center;
-  padding: 9px 10px 10px 15px;
-  background: #F2F2F2;
-  border-radius: 4px;
+.catalog-pagination__item a {
   margin-right: 8px;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  color: #FFFFFF;
+  line-height: 36px;
+  color: #fff;
   background: #82B3D3;
   border: 1px solid #82B3D3;
-}
-
-.catalog-bottom__pagination {
-  margin-bottom: 30px;
-}
-
-.catalog-bottom {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* select */
-.catalog__pagination-select {
-  margin-bottom: 34px;
-}
-
-.catalog__select--pagination {
-  appearance: none;
-  border: 2px solid #E5E5E5;
   border-radius: 4px;
-  outline: none;
-  padding: 14px 123px 13px 19px;
-  cursor: pointer;
-  width: 100%;
-  margin-top: -10px;
+  padding: 10px 22px 10px 22px;
 }
 
-.select_inner {
+.catalog-pagination__drop {
   display: flex;
   justify-content: space-between;
-}
-
-.select__descr {
-  margin-right: 54px;
-}
-
-.action {
-  margin-top: -15px;
 }
 
 .pagination__select {
-  appearance: none;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
-  outline: none;
-  padding: 14px 123px 13px 19px;
-  cursor: pointer;
-  width: 100%;
+  padding: 14px 43px 13px 19px;
+  width: 160px;
 }
 
-.select__inner::before {
-  content: "";
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  transform: translateY(-50%);
-  display: block;
-  width: 10px;
-  height: 10px;
-  pointer-events: none;
-  background-image: url('../images/select_treangle.svg');
-  background-position: center center;
-  background-repeat: no-repeat;
+.catalog-pagination__descr {
+  margin-right: 51px;
 }
 
-.select__inner {
-  position: relative;
-}
-
-.catalog__descr {
+.catalog-pagination__descr p {
+  padding-top: 15px;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  color: #333333;
-  margin-left: 250px;
-  margin-bottom: 20px;
 }
+
+/* select */
 
 /* subscribe */
 
