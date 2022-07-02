@@ -108,6 +108,12 @@ li {
   line-height: 26px;
 }
 
+.header__nav-link:hover {
+  content: "";
+  border-bottom: 2px solid #756257;
+  padding-bottom: 20px;
+}
+
 .header__menu-user {
   display: flex;
   justify-content: space-between;
@@ -127,6 +133,12 @@ li {
   color: #fff;
   border-radius: 4px;
   background-color: #756157;
+}
+
+.header__user-btn button:hover {
+  content: "";
+  background-color: #6C9E42;
+  transition: all 0.5s;
 }
 
 /* 2.Интро блок  */
