@@ -137,8 +137,13 @@ li {
 
 .header__user-btn button:hover {
   content: "";
-  background-color: #6C9E42;
+  background-color: #615048;
   transition: all 0.5s;
+}
+
+.header__user-btn button:active {
+  background: #756157;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* 2.Интро блок  */
@@ -400,6 +405,21 @@ li {
   margin-bottom: 93px;
 }
 
+.search__btn button:hover {
+  background-color: #615048;
+}
+
+.search__btn button:focus {
+  background: #615048;
+  transition: all 0.5s;
+}
+
+.search__btn button:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
 .page-footer__inner {
   display: flex;
   justify-content: space-between;
@@ -410,12 +430,55 @@ li {
   display: flex;
   justify-content: space-between;
   margin-left: 75px;
+  color: #fff;
 }
 
 .page-footer__img {
   margin-right: 26px;
   align-items: end;
 }
+
+.footer__vk path:hover {
+  fill: #68A2CA;
+  stroke: #68A2CA;
+  stroke-linejoin: round;
+  stroke-width: 0.4;
+}
+
+.footer__vk path:active {
+  fill: rgba(104, 162, 202, 0.3);
+  stroke-linejoin: round;
+  stroke-width: 0.1;
+}
+
+
+.footer__tg path:hover {
+  fill: #68A2CA;
+  stroke: #68A2CA;
+  stroke-linejoin: round;
+  stroke-width: 0.4;
+}
+
+.footer__tg path:active {
+  fill: rgba(104, 162, 202, 0.3);
+  stroke-linejoin: round;
+  stroke-width: 0.1;
+}
+
+.footer__youtube path:hover {
+  fill: #68A2CA;
+  stroke: #68A2CA;
+  stroke-linejoin: round;
+  stroke-width: 0.4;
+}
+
+.footer__youtube path:active {
+  fill: rgba(104, 162, 202, 0.3);
+  stroke: #68A2CA;
+  stroke-linejoin: round;
+  stroke-width: 0.1;
+}
+
 
 .page-footer__phone {
   align-items: center;
@@ -494,13 +557,24 @@ input {
   padding-right: 25px;
   padding-left: 20px;
   background: #82B3D3;
-  border-radius: 0px 10px 10px 0px;
+  border-radius: 0 10px 10px 0;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
 }
+
+.form__button:hover {
+  background-color: #68A2CA;
+  transition: all .5s;
+}
+
+.form__button:active {
+  background: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 
 .filter-content {
   background-image: url('../images/catalog-background\ 1.jpg');
@@ -765,9 +839,6 @@ legend {
   padding: 9px 15px 9px 15px;
   margin-left: 50px;
 }
-
-.catalog__divider {}
-
 
 /* pagination */
 .catalog-pagination {
