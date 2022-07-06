@@ -551,6 +551,20 @@ li {
   text-transform: uppercase;
 }
 
+.subscribe-catalog__title h2 {
+  padding-top: 94px;
+  padding-bottom: 29px;
+  color: #ffff;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+
+
 .subscribe__description {
   color: #FFFFFF;
   font-style: normal;
@@ -646,6 +660,26 @@ input {
   line-height: 21px;
   color: #FFFFFF;
 }
+
+.breadcrumbs__link svg:hover {
+  opacity: 0.6;
+  transition: all .3s;
+}
+
+.breadcrumbs__link svg:active {
+  opacity: 0.3;
+}
+
+.breadcrumbs__link p:hover {
+  color: #FFFFFF;
+}
+
+.breadcrumbs__link p:active {
+  color: #FFFFFF;
+  opacity: 0.3;
+  transition: all .3s;
+}
+
 
 .filter-content__wrap {
   display: flex;
@@ -800,6 +834,11 @@ legend {
   padding: 17px 16px 17px 16px;
 }
 
+.catalog-view__link:hover {
+  border: 2px solid #000000;
+  transition: all .3s;
+}
+
 .catalog-view {
   display: flex;
   justify-content: space-between;
@@ -859,6 +898,17 @@ legend {
   padding: 9px 15px 9px 15px;
 }
 
+.card-buttons__link:hover {
+  background: #615048;
+  transition: all .3s;
+}
+
+.card-buttons__link:active {
+  background: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
 .card-buttons__link--active {
   background: #82B3D3;
   border-radius: 4px;
@@ -869,6 +919,17 @@ legend {
   color: #fff;
   padding: 9px 15px 9px 15px;
   margin-left: 50px;
+}
+
+.card-buttons__link--active:hover {
+  background: #68A2CA;
+  transition: all .3s;
+}
+
+.card-buttons__link--active:active {
+  background: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+  transition: all .3s;
 }
 
 /* pagination */
@@ -900,6 +961,21 @@ legend {
   border-radius: 4px;
   padding: 10px 22px 10px 22px;
 }
+
+.catalog-pagination__item a:hover {
+  background: #68A2CA;
+  border: 1px solid #82B3D3;
+  transition: all .5s;
+}
+
+.catalog-pagination__item a:active {
+  background: #68A2CA;
+  border: 1px solid #82B3D3;
+  transition: all .3s;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
 
 .catalog-pagination__drop {
   display: flex;
@@ -938,6 +1014,18 @@ legend {
 }
 
 .subscribe__form-title {
+  padding-top: 94px;
+  padding-bottom: 29px;
+  color: #000000;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.catalog-form__title {
   padding-top: 94px;
   padding-bottom: 29px;
   color: #000000;
