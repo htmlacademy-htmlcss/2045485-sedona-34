@@ -108,6 +108,12 @@ li {
   line-height: 26px;
 }
 
+.header__nav-link:hover {
+  content: "";
+  border-bottom: 2px solid #756257;
+  padding-bottom: 20px;
+}
+
 .header__menu-user {
   display: flex;
   justify-content: space-between;
@@ -127,6 +133,17 @@ li {
   color: #fff;
   border-radius: 4px;
   background-color: #756157;
+}
+
+.header__user-btn button:hover {
+  content: "";
+  background-color: #615048;
+  transition: all 0.5s;
+}
+
+.header__user-btn button:active {
+  background: #756157;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* 2.Интро блок  */
@@ -388,6 +405,21 @@ li {
   margin-bottom: 93px;
 }
 
+.search__btn button:hover {
+  background-color: #615048;
+}
+
+.search__btn button:focus {
+  background: #615048;
+  transition: all 0.5s;
+}
+
+.search__btn button:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
 .page-footer__inner {
   display: flex;
   justify-content: space-between;
@@ -398,12 +430,55 @@ li {
   display: flex;
   justify-content: space-between;
   margin-left: 75px;
+  color: #fff;
 }
 
 .page-footer__img {
   margin-right: 26px;
   align-items: end;
 }
+
+.footer__vk path:hover {
+  fill: #68A2CA;
+  stroke: #68A2CA;
+  stroke-linejoin: round;
+  stroke-width: 0.4;
+}
+
+.footer__vk path:active {
+  fill: rgba(104, 162, 202, 0.3);
+  stroke-linejoin: round;
+  stroke-width: 0.1;
+}
+
+
+.footer__tg path:hover {
+  fill: #68A2CA;
+  stroke: #68A2CA;
+  stroke-linejoin: round;
+  stroke-width: 0.4;
+}
+
+.footer__tg path:active {
+  fill: rgba(104, 162, 202, 0.3);
+  stroke-linejoin: round;
+  stroke-width: 0.1;
+}
+
+.footer__youtube path:hover {
+  fill: #68A2CA;
+  stroke: #68A2CA;
+  stroke-linejoin: round;
+  stroke-width: 0.4;
+}
+
+.footer__youtube path:active {
+  fill: rgba(104, 162, 202, 0.3);
+  stroke: #68A2CA;
+  stroke-linejoin: round;
+  stroke-width: 0.1;
+}
+
 
 .page-footer__phone {
   align-items: center;
@@ -414,7 +489,16 @@ li {
   text-transform: uppercase;
 }
 
-.page-footer__wrap {
+.page-footer__phone:hover {
+  color: #756157;
+}
+
+.page-footer__phone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+
+.page-footer__phone.page-footer__wrap {
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -425,7 +509,29 @@ li {
   margin-right: 75px;
 }
 
-.subscribe__inner {
+.page-footer__logo path:hover {
+  fill: #756157;
+  stroke: #756157;
+  stroke-width: 0.2;
+}
+
+.page-footer__logo path:active {
+  fill: rgba(117, 97, 87, 0.3);
+  stroke: #756157;
+  stroke-width: 0.2;
+}
+
+.subscribe {
+  background-image: url('../images/background-subs.jpg');
+  background-repeat: no-repeat;
+  height: auto;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+
+
+.page-footer__logo.subscribe__inner {
   background-image: url('../images/background.jpg');
   background-repeat: no-repeat;
   height: auto;
@@ -433,10 +539,10 @@ li {
   background-size: cover;
 }
 
-.subscribe__title {
+.subscribe__title h2 {
   padding-top: 94px;
   padding-bottom: 29px;
-  color: #fff;
+  color: #ffff;
   text-align: center;
   font-style: normal;
   font-weight: 700;
@@ -445,8 +551,22 @@ li {
   text-transform: uppercase;
 }
 
+.subscribe-catalog__title h2 {
+  padding-top: 94px;
+  padding-bottom: 29px;
+  color: #ffff;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+
+
 .subscribe__description {
-  color: #fff;
+  color: #FFFFFF;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -482,13 +602,24 @@ input {
   padding-right: 25px;
   padding-left: 20px;
   background: #82B3D3;
-  border-radius: 0px 10px 10px 0px;
+  border-radius: 0 10px 10px 0;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
 }
+
+.form__button:hover {
+  background-color: #68A2CA;
+  transition: all .5s;
+}
+
+.form__button:active {
+  background: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 
 .filter-content {
   background-image: url('../images/catalog-background\ 1.jpg');
@@ -529,6 +660,26 @@ input {
   line-height: 21px;
   color: #FFFFFF;
 }
+
+.breadcrumbs__link svg:hover {
+  opacity: 0.6;
+  transition: all .3s;
+}
+
+.breadcrumbs__link svg:active {
+  opacity: 0.3;
+}
+
+.breadcrumbs__link p:hover {
+  color: #FFFFFF;
+}
+
+.breadcrumbs__link p:active {
+  color: #FFFFFF;
+  opacity: 0.3;
+  transition: all .3s;
+}
+
 
 .filter-content__wrap {
   display: flex;
@@ -683,6 +834,11 @@ legend {
   padding: 17px 16px 17px 16px;
 }
 
+.catalog-view__link:hover {
+  border: 2px solid #000000;
+  transition: all .3s;
+}
+
 .catalog-view {
   display: flex;
   justify-content: space-between;
@@ -742,6 +898,17 @@ legend {
   padding: 9px 15px 9px 15px;
 }
 
+.card-buttons__link:hover {
+  background: #615048;
+  transition: all .3s;
+}
+
+.card-buttons__link:active {
+  background: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
 .card-buttons__link--active {
   background: #82B3D3;
   border-radius: 4px;
@@ -754,8 +921,16 @@ legend {
   margin-left: 50px;
 }
 
-.catalog__divider {}
+.card-buttons__link--active:hover {
+  background: #68A2CA;
+  transition: all .3s;
+}
 
+.card-buttons__link--active:active {
+  background: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+  transition: all .3s;
+}
 
 /* pagination */
 .catalog-pagination {
@@ -786,6 +961,21 @@ legend {
   border-radius: 4px;
   padding: 10px 22px 10px 22px;
 }
+
+.catalog-pagination__item a:hover {
+  background: #68A2CA;
+  border: 1px solid #82B3D3;
+  transition: all .5s;
+}
+
+.catalog-pagination__item a:active {
+  background: #68A2CA;
+  border: 1px solid #82B3D3;
+  transition: all .3s;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
 
 .catalog-pagination__drop {
   display: flex;
@@ -824,6 +1014,18 @@ legend {
 }
 
 .subscribe__form-title {
+  padding-top: 94px;
+  padding-bottom: 29px;
+  color: #000000;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.catalog-form__title {
   padding-top: 94px;
   padding-bottom: 29px;
   color: #000000;
