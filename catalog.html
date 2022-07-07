@@ -65,99 +65,127 @@
     </header>
 
     <main class="catalog-main">
-      <section class="filter-content">
+      <section class="catalog-filter">
         <div class="container">
-          <div class="filter-content__inner">
-            <div class="filter-content__title">
+          <div class="catalog-filter__top">
+            <div class="catalog-filter__title">
               <h1>Гостиницы Седоны</h1>
             </div>
-            <div class="filter-content__breadcrumbs">
-              <a href="#" class="breadcrumbs__link">
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M6 .3 0 5.8V12h12V5.8L6 .3ZM11 11H1V6.2l5-4.5 5 4.5V11Z" fill="#fff" />
-                  <path d="M4 10h1V7.5h2V10h1V6.5H4V10Z" fill="#fff" /></svg>
-              </a>
-              <a href="#" class="breadcrumbs__link">
-                <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M4.8 3.6 1 .2C.8 0 .4 0 .1.2-.2.4-.1.8.1 1l3.3 3L.2 7c-.2.2-.2.6 0 .8 0 .1.3.2.4.2.1 0 .3-.1.4-.2l3.8-3.4c.3-.2.3-.6 0-.8Z"
+            <div class="catalog-filter__breadcrumbs">
+              <a href="#" class="breadcumbs__link">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="m.162 6.15 6-5.5 6 5.5v6.2h-12v-6.2Zm1 .4v4.8h10v-4.8l-5-4.5-5 4.5Zm4 3.8h-1v-3.5h4v3.5h-1v-2.5h-2v2.5Z"
                     fill="#fff" /></svg>
               </a>
-              <a href="#" class="breadcrumbs__link">
-                <p>Гостиницы</p>
+              <a href="#" class="breadcumbs__link">
+                <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="m5.051 4.075-3.8-3.4c-.2-.2-.6-.2-.9 0-.3.2-.2.6 0 .8l3.3 3-3.2 3c-.2.2-.2.6 0 .8 0 .1.3.2.4.2.1 0 .3-.1.4-.2l3.8-3.4c.3-.2.3-.6 0-.8Z"
+                    fill="#fff" /></svg>
+              </a>
+              <a href="#" class="breadcumbs__link--active">
+                Гостиницы
               </a>
             </div>
+          </div>
 
-            <div class="filter-content__wrap">
-              <div class="filter-content__checkbox">
-                <form action="" class="filter-content__form" method="get">
-                  <fieldset>
-                    <legend>Инфраструктура:</legend>
-                    <div class="filter-content__group">
-                      <div class="filter-content__group-1">
-                        <label for="" class="filter-content__label">
-                          <input type="checkbox" class="filter-content__input" checked>
-                          <span class="filter-content__check"></span>
-                          <p class="filter-content__text">Бассейн</p>
+          <div class="catalog-filter__content">
+            <div class="catalog-filter__wrap">
+              <div class="catalog-filter__box">
+                <form action="#" class="catalog-filter__form" method="get">
+                  <fieldset class="catalog-box__group">
+                    <legend class="catalog-box__title">Инфраструктура:</legend>
+                    <ul class="catalog-box__list">
+                      <li class="catalog-box__item">
+                        <label class="catalog-box__label">
+                          <input class="catalog-box__input visually-hidden" type="checkbox" name="pool" checked>
+                          <span class="catalog-box__mark"></span>
+                          <span class="catalog-box__name">Бассейн</span>
                         </label>
-                      </div>
-                      <div class="filter-content__group-2">
-                        <label for="" class="filter-content__label">
-                          <input type="checkbox" class="filter-content__input" checked>
-                          <span class="filter-content__check"></span>
-                          <p class="filter-content__text">Парковка</p>
+                      </li>
+                      <li class="catalog-box__item">
+                        <label class="catalog-box__label">
+                          <input class="catalog-box__input visually-hidden" type="checkbox" name="parking">
+                          <span class="catalog-box__mark"></span>
+                          <span class="catalog-box__name">Парковка</span>
                         </label>
-                      </div>
-                      <div class="filter-content__group-3">
-                        <label for="" class="filter-content__label">
-                          <input type="checkbox" class="filter-content__input">
-                          <span class="filter-content__check"></span>
-                          <p class="filter-content__text">WI-FI</p>
+                      </li>
+                      <li class="catalog-box__item">
+                        <label class="catalog-box__label">
+                          <input class="catalog-box__input visually-hidden" type="checkbox" name="wi-fi">
+                          <span class="catalog-box__mark"></span>
+                          <span class="catalog-box__name">Wi-Fi</span>
                         </label>
+                      </li>
+                    </ul>
+                  </fieldset>
+              </div>
+              <div class="catalog-filter__radio">
+                <fieldset class="catalog-radio__group">
+                  <legend class="catalog-raido__label">Тип жилья:</legend>
+                  <ul class="catalog-radio__list">
+                    <li class="catalog-radio__item">
+                      <label class="catalog-radio__label">
+                        <input class="catalog-radio__input visually-hidden" type="radio" name="hotel" checked>
+                        <span class="catalog-radio__mark"></span>
+                        <span class="catalog-radio__name">Гостиница</span>
+                      </label>
+                    </li>
+                    <li class="catalog-radio__item">
+                      <label class="catalog-radio__label">
+                        <input class="catalog-radio__input visually-hidden" type="radio" name="motel">
+                        <span class="catalog-radio__mark"></span>
+                        <span class="catalog-radio__name">Мотель</span>
+                      </label>
+                    </li>
+                    <li class="catalog-radio__item">
+                      <label class="catalog-radio__label">
+                        <input class="catalog-radio__input visually-hidden" type="radio" name="apartments">
+                        <span class="catalog-radio__mark"></span>
+                        <span class="catalog-radio__name">Апартаменты</span>
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
+            </div>
+
+            <div class="catalog-filter__range">
+              <fieldset catalog="filter-range__group">
+                <legend class="filter-range__title">Стоимость, ₽:</legend>
+                <div class="filter-range__wrap">
+                  <div class="filter-range__inner">
+                    <label class="filter-range__label">
+                      <input type="number" class="filter-range__input" value="0" name="min-price">
+                      <p>от</p>
+                    </label>
+                    <label class="filter-range__label">
+                      <input type="number" class="filter-range__input" value="9000" name="max-pri">
+                      <p>до</p>
+                    </label>
+                  </div>
+                  <div class="filter-range">
+                    <div class="filter-range__scale" style="width: 230px;">
+                      <div class="filter-range__bar" style="left: 0; width: 180px;">
+                        <button type="button" class="range__button toggle-min">
+                          <span class="visually-hidden">Изменить минимальную цену </span>
+                        </button>
+                        <button type="button" class="range__button toggle-max">
+                          <span class="visually-hidden">Изменить максимальную цену</span>
+                        </button>
                       </div>
                     </div>
-              </div>
+                  </div>
+                </div>
               </fieldset>
-              </form>
-
-              <div class="filter-content__radio">
-                <form action="#" class="filter-content__form" method="get">
-                  <fieldset>
-                    <legend>Тип жилья:</legend>
-                    <div class="filter-content__group">
-                      <div class="filter-content__group-1">
-                        <label for="" class="filter-content__label">
-                          <input type="radio" class="filter-content__input radio-btn" checked>
-                          <span class="filter-content__check radio"></span>
-                          <p class="filter-content__text">Гостиница</p>
-                        </label>
-                      </div>
-                      <div class="filter-content__group-2">
-                        <label for="" class="filter-content__label">
-                          <input type="radio" class="filter-content__input radio-btn">
-                          <span class="filter-content__check radio"></span>
-                          <p class="filter-content__text">Мотель</p>
-                        </label>
-                      </div>
-                      <div class="filter-content__group-3">
-                        <label for="" class="filter-content__label">
-                          <input type="radio" class="filter-content__input">
-                          <span class="filter-content__check radio"></span>
-                          <p class="filter-content__text">Апартаменты</p>
-                        </label>
-                      </div>
-                    </div>
-              </div>
-              </fieldset>
-              </form>
+            </div>
+            </form>
+            <div class="filter-buttons">
+              <button type="button" class="filter-button__active">Применить</button>
+              <button type="button" class="filter-btn">Сбросить</button>
             </div>
           </div>
-
-          <div class="filter-content__price">
-
-          </div>
-        </div>
-        </div>
         </div>
       </section>
 
